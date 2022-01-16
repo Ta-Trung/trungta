@@ -11,21 +11,66 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'trungta' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'trungta' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'trungta' ), 'trungta', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+	        <!--Footer-->
+			<footer class="footer">
+            <div class="row">
+                <div class="col-1-of-4 footer__logo-box">
+                        <a href="#">
+                            <img src=<?php echo get_theme_file_uri( './images/Trung-Ta-Logo.png' ) ?> alt="Trung Ta Logo" class="footer__logo">
+                        </a>
+
+                    <ul class="footer__social-links">
+                        <li>
+                            <a class="footer__link" href="#"><i class="footer__icon fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a class="footer__link" href="#"><i class="footer__icon fab fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a class="footer__link" href="#"><i class="footer__icon fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+
+                    <p class="footer__copyright">
+                        Copyright &copy; <span class="year">2021</span> Trung Ta
+                        All rights reserved.
+                    </p>
+                </div>
+
+            
+                <div class="col-1-of-4">
+                    <p class="footer__heading">Yhteystiedot</p>
+                    <address class="footer__contacts">
+                    <p class="footer__address">
+                        Suomen nettimyynti Oy<br>
+                        Trung Ta<br>
+                        Palstakatu 7-9<br>
+                        11100 Riihimäki<br>
+                    </p>
+                    <p>
+                        <a class="footer__link" href="tel:+35844123776">+358440123776</a> (myös Whatappissa)
+                    </p>
+                </div>
+
+                <div class="col-1-of-4">
+                    <p class="footer__heading">Julkaisut</p>
+                    <ul class="footer__nav">
+                      <li><a class="footer__link" href="#">Tietosuojaseloste</a></li>
+                      <li><a class="footer__link" href="#">Pyydä tarjous</a></li>
+                      <li><a class="footer__link" href="#">Hinnasto</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-1-of-4">
+                    <p class="footer__heading">Ohjeet</p>
+                    <ul class="footer__nav">
+                      <li><a class="footer__link" href="#">Tietosuojaseloste</a></li>
+                      <li><a class="footer__link" href="#">Pyydä tarjous</a></li>
+                      <li><a class="footer__link" href="#">Hinnasto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

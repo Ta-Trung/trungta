@@ -20,40 +20,29 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'trungta' ); ?></a>
+<body>
+    <!--NAVIGATION-->
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$trungta_description = get_bloginfo( 'description', 'display' );
-			if ( $trungta_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $trungta_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'trungta' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Tieto Trungista</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Palvelut</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Refrenssit</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Hyödyt julkaisut</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Pyydä tarjous</a></li>
+                </ul>
+        </nav>
+    </div>
+
+    <!--HEADER-->
+    <header class="header">
+        <a href="#"><img class="header__logo" src=<?php echo get_theme_file_uri( './images/Trung-Ta-Logo.png' ) ?> alt="Trung Ta Logo"></a>
+    </header>

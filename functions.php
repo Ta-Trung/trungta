@@ -138,10 +138,9 @@ add_action( 'widgets_init', 'trungta_widgets_init' );
  * Enqueue scripts and styles.
  */
 function trungta_scripts() {
-	wp_enqueue_style( 'trungta-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'trungta-style', 'rtl', 'replace' );
-
-	wp_enqueue_script( 'trungta-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_style( 'trungta-main-style', get_theme_file_uri( '/assets/css/main.css' ));
+	wp_enqueue_style( 'font-awesome', get_theme_file_uri( '/assets/css/all.css' ));
+	wp_enqueue_style( 'Google-fonts', '//fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
