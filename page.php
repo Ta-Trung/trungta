@@ -15,24 +15,94 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<main>
 
 		<?php
-		while ( have_posts() ) :
+		while ( have_posts() ) {
 			the_post();
-
-			get_template_part( 'template-parts/content', 'page' );
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
 		?>
+
+		<!--ABOUT TRUNG-->
+        <div class="about-header u-center-text u-margin-bottom-big">
+            <h2 class="heading-subpage">About us</h2>
+            <p class="paragraph-subpage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, saepe?</p>
+        </div>
+
+        <!--IMAGES-->
+        <div class="about-card">
+            <div class="about-card__img">
+                <img src=<?php echo get_theme_file_uri( 'images/trung-ta-lapi-1.png' ) ?> alt="Trung Ta" class="about-card__aboutimg">
+            </div>
+            <div class="about-card__info">
+                <h2 class="heading-tertiary">Trung Ta</h2>
+				<p class="paragraph-subpage"class="paragraph-subpage">Web-Kehittäjä</p>
+            </div>
+        </div>
+
+        <section class="section-about">
+            <div class="row">
+                <div class="col-1-of-2">
+                    <h1 class="heading-subpage">Kuka minä olen?</h1>
+                    <p class="paragraph-subpage"class="paragraph-subpage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, neque, sit voluptate aperiam modi nam enim, ducimus quo nulla totam omnis tempora magni placeat. Quasi ad odit, 
+                        eveniet quidem maxime autem iste porro. Fugiat commodi non illum, nam quas iste et, accusantium id 
+                        at asperiores dolorem autem, libero laborum neque!</p>
+
+                    <p class="paragraph-subpage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, neque, sit voluptate aperiam modi nam enim, ducimus quo nulla totam omnis tempora magni placeat. Quasi ad odit, 
+                        eveniet quidem maxime autem iste porro. Fugiat commodi non illum, nam quas iste et, accusantium id 
+                        at asperiores dolorem autem, libero laborum neque!</p>
+                </div>
+
+                <div class="col-1-of-2">
+                    <nav class="section-about__nav">
+                        <ul class="section-about__list">
+                            <li><a href="about.html" class="section-about__link">Tieto Trungista</a></li>
+                            <li><a href="#" class="section-about__link">Palvelut</a></li>
+                            <li><a href="#" class="section-about__link">Refrenssit</a></li>
+                            <li><a href="#" class="section-about__link">Hyödyt julkaisut</a></li>
+                            <li><a href="#" class="section-about__link">Pyydä tarjous</a></li>
+                            </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <!--ICON BOX-->
+        <section class="section-iconbox">
+            <div class="row">
+                <div class="col-1-of-3 section-iconbox__bg-dark">
+                    <div class="section-iconbox__card-body">
+                        <i class="section-iconbox__icon fas fa-bullhorn"></i>
+                        <h3 class="heading-tertiary">
+                            Sample Heading
+                        </h3>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, expedita.
+                    </div>
+                </div>
+
+                <div class="col-1-of-3 section-iconbox__bg-primary">
+                    <div class="section-iconbox__card-body-primary">
+                        <i class="section-iconbox__icon-primary fas fa-bullhorn"></i>
+                        <h3 class="heading-tertiary">
+                            Sample Heading
+                        </h3>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, expedita.
+                    </div>
+                </div>
+
+                <div class="col-1-of-3 section-iconbox__bg-dark">
+                    <div class="section-iconbox__card-body">
+                        <i class="section-iconbox__icon fas fa-bullhorn"></i>
+                        <h3 class="heading-tertiary">
+                            Sample Heading
+                        </h3>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, expedita.
+                    </div>
+                </div>
+            </div>
+        </section>
 
 	</main><!-- #main -->
 
-<?php
+<?php }
 get_sidebar();
 get_footer();
