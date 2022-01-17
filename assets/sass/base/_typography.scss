@@ -49,6 +49,36 @@ body{
     }
 }
 
+.heading-subpage{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-color: $color-black;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
+
+}
+
+.paragraph-subpage {
+    font-size: $default-font-size;
+    color:$color-black;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
+
 .heading-tertiary {
     font-size: $default-font-size;
     font-weight: 700;
