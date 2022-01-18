@@ -18,9 +18,10 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+
 </head>
 
-<body>
+<body <?php body_class(); ?>>
     <!--NAVIGATION-->
     <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
@@ -33,7 +34,7 @@
 
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Tieto Trungista</a></li>
+                <li class="navigation__item"><a href="<?php echo site_url('/tieto-trungista') ?>" class="navigation__link"><span>01</span>Tieto Trungista</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Palvelut</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Refrenssit</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Hyödyt julkaisut</a></li>
@@ -44,5 +45,5 @@
 
     <!--HEADER-->
     <header class="header">
-        <a href="#"><img class="header__logo" src=<?php echo get_theme_file_uri( './images/Trung-Ta-Logo.png' ) ?> alt="Trung Ta Logo"></a>
+        <a href="<?php echo site_url() ?>"><img class="header__logo" src=<?php echo get_theme_file_uri( './images/Trung-Ta-Logo.png' ) ?> alt="Trung Ta Logo"></a>
     </header>
