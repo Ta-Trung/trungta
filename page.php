@@ -24,11 +24,13 @@ get_header();
 
 		<!--ABOUT TRUNG-->
         <div class="about-header u-center-text u-margin-bottom-big">
-            <h2 class="heading-subpage">About us</h2>
-            <p class="paragraph-subpage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, saepe?</p>
+            <h2 class="heading-subpage"><?php the_title() ?></h2>
+            <p class="paragraph-subpage">TÄN ON VAIHDETTAVA</p>
         </div>
 
+        
         <!--IMAGES-->
+        <!--
         <div class="about-card">
             <div class="about-card__img">
                 <img src=<?php echo get_theme_file_uri( 'images/trung-ta-lapi-1.png' ) ?> alt="Trung Ta" class="about-card__aboutimg">
@@ -38,20 +40,15 @@ get_header();
 				<p class="paragraph-subpage"class="paragraph-subpage">Web-Kehittäjä</p>
             </div>
         </div>
+        -->
 
         <section class="section-about">
             <div class="row">
                 <div class="col-1-of-2">
                     <h1 class="heading-subpage">Kuka minä olen?</h1>
-                    <p class="paragraph-subpage"class="paragraph-subpage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, neque, sit voluptate aperiam modi nam enim, ducimus quo nulla totam omnis tempora magni placeat. Quasi ad odit, 
-                        eveniet quidem maxime autem iste porro. Fugiat commodi non illum, nam quas iste et, accusantium id 
-                        at asperiores dolorem autem, libero laborum neque!</p>
-
-                    <p class="paragraph-subpage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, neque, sit voluptate aperiam modi nam enim, ducimus quo nulla totam omnis tempora magni placeat. Quasi ad odit, 
-                        eveniet quidem maxime autem iste porro. Fugiat commodi non illum, nam quas iste et, accusantium id 
-                        at asperiores dolorem autem, libero laborum neque!</p>
+                    <?php the_content() ?>
                 </div>
-
+                
                 <div class="col-1-of-2">
                     <nav class="section-about__nav">
                         <ul class="section-about__list">
@@ -60,7 +57,7 @@ get_header();
                             <li><a href="#" class="section-about__link">Refrenssit</a></li>
                             <li><a href="#" class="section-about__link">Hyödyt julkaisut</a></li>
                             <li><a href="#" class="section-about__link">Pyydä tarjous</a></li>
-                            </ul>
+                        </ul>
                     </nav>
                 </div>
             </div>
@@ -104,5 +101,4 @@ get_header();
 	</main><!-- #main -->
 
 <?php }
-get_sidebar();
 get_footer();
