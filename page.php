@@ -44,7 +44,7 @@ get_header();
 
         <section class="section-about">
             <div class="row">
-                <div class="col-1-of-2">
+                <div class="col-1-of-2 content">
                     <h1 class="heading-subpage">Kuka minä olen?</h1>
                     <?php the_content() ?>
                 </div>
@@ -55,8 +55,8 @@ get_header();
                             <li><a href="about.html" class="section-about__link">Tieto Trungista</a></li>
                             <li><a href="#" class="section-about__link">Palvelut</a></li>
                             <li><a href="#" class="section-about__link">Refrenssit</a></li>
+                            <li><a href="#" class="section-about__link"></a>Varaa keskusteluaika</li>
                             <li><a href="#" class="section-about__link">Hyödyt julkaisut</a></li>
-                            <li><a href="#" class="section-about__link">Pyydä tarjous</a></li>
                         </ul>
                     </nav>
                 </div>
