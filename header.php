@@ -33,14 +33,21 @@
         <div class="navigation__background">&nbsp;</div>
 
         <nav class="navigation__nav">
-            
+            <?php 
+                wp_nav_menu(array (
+                    'theme_location'    => 'headerMenuLocation'
+                ))
+            ?>
+
+            <!--
             <ul class="navigation__list">
                 <li class="navigation__item"><a href="<?php echo site_url('/tieto-trungista') ?>" class="navigation__link"><span>01</span>Tieto Trungista</a></li>
                 <li class="navigation__item"><a href="<?php echo site_url( '/palvelut') ?>" class="navigation__link"><span>02</span>Palvelut</a></li>
                 <li class="navigation__item"><a href="<?php echo site_url( '/refrenssit' ) ?>" class="navigation__link"><span>03</span>Refrenssit</a></li>
                 <li class="navigation__item"><a href="<?php echo site_url( '/varaa-keskusteluaika') ?>" class="navigation__link"><span>04</span>Varaa keskusteluaika</a></li>
                 <li class="navigation__item"><a href="<?php echo site_url('/hyodyt-julkaisut') ?>" class="navigation__link"><span>05</span>Hyödyt julkaisut</a></li>
-                </ul>
+            </ul>
+            -->
         </nav>
     </div>
 
