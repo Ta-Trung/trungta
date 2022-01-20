@@ -103,7 +103,7 @@ body {
     .heading-secondary {
       font-size: 2.5rem; } }
   .heading-secondary:hover {
-    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    transform: skewY(0deg) skewX(1deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(24, 24, 24, 0.2); }
 
 .heading-subpage {
@@ -905,6 +905,25 @@ body {
   .content p:not(:last-child) {
     margin-bottom: 3rem; }
 
+.navigation__nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -25%;
+  z-index: 1500;
+  opacity: 0;
+  width: 0;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__nav {
+      position: fixed;
+      top: 0;
+      left: -60%;
+      z-index: 1500;
+      opacity: 0;
+      width: 0;
+      transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); } }
+
 .navigation__nav ul {
   position: absolute;
   top: 50%;
@@ -913,6 +932,15 @@ body {
   list-style: none;
   text-align: center;
   width: 100%; }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__nav ul {
+      position: absolute;
+      top: 50%;
+      left: 110%;
+      transform: translate(-50%, -50%);
+      list-style: none;
+      text-align: center;
+      width: 100%; } }
 
 .navigation__nav li {
   margin: 1rem; }
@@ -957,6 +985,9 @@ body {
 
 .menu-footer-two-container li > a:hover, a:active {
   color: #00A6DA; }
+
+.post-item {
+  background-color: #181818; }
 
 .section-hero {
   background-color: #181818;

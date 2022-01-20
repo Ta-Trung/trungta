@@ -32,8 +32,12 @@
                     </ul>
 
                     <p class="footer__copyright">
-                        Copyright &copy; <span class="year">2021</span> Trung Ta
-                        All rights reserved.
+                        Trung Ta &copy; <span class="year">2022</span> 
+                        All rights reserved.<br>
+                        
+                    </p>
+                    <p class="footer__copyright">
+                        Verkkototeutus Trung Ta
                     </p>
                 </div>
 

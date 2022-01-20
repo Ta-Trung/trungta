@@ -9,6 +9,28 @@
 }
 
 //NAVIGATION THAT COMPATIBLE WITH WORDPRESS
+.navigation__nav{
+    height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -25%;
+        z-index: 1500;
+
+        opacity: 0;
+        width: 0;
+        transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+        @include respond(phone){
+            position: fixed;
+            top: 0;
+            left: -60%;
+            z-index: 1500;
+
+            opacity: 0;
+            width: 0;
+            transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+}
 .navigation__nav ul{
     position: absolute;
     top: 50%;
@@ -17,6 +39,16 @@
     list-style: none;
     text-align: center;
     width: 100%;
+
+    @include respond(phone){
+        position: absolute;
+        top: 50%;
+        left: 110%;
+        transform: translate(-50%,-50%);
+        list-style: none;
+        text-align: center;
+        width: 100%;
+    }
 
 }
 
@@ -73,4 +105,8 @@
     color: $color-primary;
 }
 
+//BLOG THAT COMPATIBLE WITH WORDPRESS
+.post-item{
+    background-color:$color-black;
+}
 
