@@ -27,7 +27,7 @@ get_header();
                     <p class="hero__banner-description">Nettisivu on varmaan sijoitus, joka maksaisi ennemmin tai myöhemmin 
                         rahat takaisin sinulle. Minulla saat apua nettisivun sekä suunnittelussa 
                         että toteutuksessa.</p>
-                    <a href="#" class="btn btn--primary btn--animated">Varaa soittoaika</a>
+                    <a href="#section-varaus" class="btn btn--primary btn--animated">Varaa soittoaika</a>
                 </div>
                 <div class="col-1-of-2 hero__owner-img-box">
                     <img src=<?php echo get_theme_file_uri( './images/trung-ta-lapi-1.png' )?> alt="Trung Ta" class="hero__owner-img">
@@ -112,7 +112,7 @@ get_header();
         </div>
 
         <div class="u-center-text u-margin-top-huge">
-            <a href="#" class="btn-text">Lue lisää &rarr;</a>
+            <a href="<?php echo site_url('/tieto-trungista') ?>" class="btn-text">Lue lisää &rarr;</a>
         </div>
     </section>
 
@@ -152,7 +152,7 @@ get_header();
                                     <p class="card__price-only">alk.</p>
                                     <p class="card__price-value">1350,00</p>
                                 </div>
-                                <a href="#popup" class="btn btn--white">Pyydä tarjous!</a>
+                                <a href="#popup" class="btn btn--grey">Katso lisää!</a>
                             </div>
                         </div>
                     </div>
@@ -184,7 +184,7 @@ get_header();
                                      <p class="card__price-only">alk.</p>
                                      <p class="card__price-value">2500,00</p>
                                  </div>
-                                 <a href="#popup" class="btn btn--white">Pyydä tarjous!</a>
+                                 <a href="#popup" class="btn btn--grey">Katso lisää!</a>
                              </div>
                         </div>
                     </div>
@@ -216,7 +216,7 @@ get_header();
                                      <p class="card__price-only">alk.</p>
                                      <p class="card__price-value">4000,00</p>
                                  </div>
-                                 <a href="#popup" class="btn btn--white">Pyydä tarjous!</a>
+                                 <a href="#popup" class="btn btn--grey">Pyydä tarjous!</a>
                              </div>
                         </div>
                     </div>
@@ -243,7 +243,7 @@ get_header();
                         </div>
                         <div class="card__side card__side--back card__side--back-1">
                              <div class="card__cta">
-                                 <a href="#popup" class="btn btn--white">Pyydä tarjous!</a>
+                                 <a href="#popup" class="btn btn--grey">Katso lisää!</a>
                              </div>
                         </div>
                     </div>
@@ -253,7 +253,7 @@ get_header();
     
 
     <!--Varaus-->
-    <section class="section-varaus">
+    <section class="section-varaus" id="section-varaus">
         <div class="row">
             <div class="varaus">
                 <div class="varaus__form">
@@ -291,10 +291,10 @@ get_header();
     <div class="popup" id="popup">
         <div class="popup__content">
             <div class="popup__left">
-                <img src=<?php echo get_theme_file_uri( './images/Trung Ta.jpg' ) ?> alt="Tour photo" class="popup__img">
+                <img src=<?php echo get_theme_file_uri( './images/Trung-Ta.jpg' ) ?> alt="Trung Ta" class="popup__img">
             </div>
             <div class="popup__right">
-                <a href="#section-varaus" class="popup__close">&times;</a>
+                <a href="#section-hinnasto" class="popup__close">&times;</a>
                 <h2 class="heading-secondary u-margin-bottom-small">WP-Nettisivujen Peruspaketti</h2>
                 <h3 class="heading-tertiary u-margin-bottom-small">Hintaan lisätään 24% alv</h3>
                 <p class="popup__text">
@@ -308,7 +308,7 @@ get_header();
                 </p>
 
                 <p class="popup__text">Hinta alk. 1350€</p>
-                <a href="#" class="btn btn--blue">Pyydä tarjous</a>
+                <a href="#section-varaus" class="btn btn--blue">Pyydä tarjous</a>
             </div>
         </div>
     </div>

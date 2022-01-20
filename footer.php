@@ -62,12 +62,20 @@
                 </div>
 
                 <div class="col-1-of-4">
-                    <p class="footer__heading">Ohjeet</p>
+                    <p class="footer__heading">Sivukartat</p>
+
+                    <?php 
+                        wp_nav_menu( array(
+                            'theme_location'    => 'footerLocationTwo'
+                        ) )
+                    ?>
+                    <!--
                     <ul class="footer__nav">
                       <li><a class="footer__link" href="<?php echo site_url( '/tietosuojaseloste' ) ?>">Tietosuojaseloste</a></li>
                       <li><a class="footer__link" href="#">Pyydä tarjous</a></li>
                       <li><a class="footer__link" href="#">Hinnasto</a></li>
                     </ul>
+                    -->
                 </div>
             </div>
         </footer>

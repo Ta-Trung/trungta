@@ -229,15 +229,20 @@ body {
 .btn--white {
   background-color: #fff;
   color: #2B2B2B; }
-
-.btn--white::after {
-  background-color: #fff; }
+  .btn--white::after {
+    background-color: #fff; }
 
 .btn--blue {
   background-color: #00A6DA;
   color: #fff; }
   .btn--blue::after {
     background-color: #00A6DA; }
+
+.btn--grey {
+  background-color: #777;
+  color: #fff; }
+  .btn--grey::after {
+    background-color: #777; }
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
@@ -899,6 +904,59 @@ body {
   color: #181818; }
   .content p:not(:last-child) {
     margin-bottom: 3rem; }
+
+.navigation__nav ul {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%; }
+
+.navigation__nav li {
+  margin: 1rem; }
+
+.navigation__nav li > a:link, a:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 220%;
+  transition: all .4s; }
+
+.navigation__nav li > a:hover, a:active {
+  background-position: 100%;
+  color: #00A6DA;
+  transform: translateX(1rem); }
+
+.menu-footer-two-container {
+  background-color: #181818;
+  padding: 0 0;
+  font-size: 1.4rem;
+  color: #f7f7f7; }
+  @media only screen and (max-width: 56.25em) {
+    .menu-footer-two-container {
+      padding: 8rem 0; } }
+
+.menu-footer-two-container ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem; }
+
+.menu-footer-two-container li > a:link, a:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #fff;
+  transition: all 0.3s; }
+
+.menu-footer-two-container li > a:hover, a:active {
+  color: #00A6DA; }
 
 .section-hero {
   background-color: #181818;

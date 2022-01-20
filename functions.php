@@ -50,6 +50,8 @@ function trungta_setup() {
 	register_nav_menus(
 		array(
 			'headerMenuLocation' => esc_html__( 'Header Menu Location', 'trungta' ),
+			'footerLocationOne'	 => esc_html__('Footer Location One', 'trungta'),
+			'footerLocationTwo'	 => esc_html__('Footer Location Two', 'trungta'),
 		)
 	);
 
