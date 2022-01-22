@@ -42,10 +42,8 @@
   }
   
   .section-about{
-  
-     margin-top: 10rem; 
-  
-  
+      margin-top: -5rem;
+
       &__nav{
         font-size: 1.2rem;
         text-transform: uppercase;
@@ -133,3 +131,9 @@
       color: transparent;
   }
   }
+
+  .section-metabox{
+    clear:both;
+  }
+
+ 
