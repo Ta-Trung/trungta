@@ -20,7 +20,22 @@ get_header();
             <h2 class="heading-subpage"><?php the_title() ?></h2>
             <p class="paragraph-subpage">TÄN ON VAIHDETTAVA</p>
         </div>
-
+		
+		<!--SINGLES POSTS-->
+		<section class="section-single">
+			<div class="row">
+				<div class="col">
+					<div class="metabox metabox--position-up metabox--with-home-link">
+						<p><a class="metabox__blog-home-link" href="<?php echo site_url('/blog') ?>"><i class="fa fa-home" aria-hidden="true"></i> 
+						Blog Home</a> <span class="metabox__main"><?php the_author_posts_link(); ?> kirjoitti <?php the_time('n.j.y') ?> ja postattu tähän kategoriin nimellä <?php echo get_the_category_list(', '); ?></span></p>
+					</div>
+				</div>
+			</div>
+            <div class="row">
+                <div class="col section-single__content">
+                    <?php the_content() ?>
+                </div>
+		</section>
 	</main><!-- #main -->
 
 <?php }

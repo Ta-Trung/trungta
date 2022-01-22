@@ -441,6 +441,48 @@ body {
   .lupaus-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
+.metabox {
+  background-color: #f5f5dc;
+  border-radius: 3px;
+  padding: 10px 15px;
+  display: inline-block;
+  margin-bottom: 30px;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.07); }
+  .metabox--position-up {
+    top: 0;
+    transform: translateY(-322%); }
+    @media only screen and (max-width: 37.5em) {
+      .metabox--position-up {
+        transform: translateY(-182%); } }
+    @media only screen and (max-width: 56.25em) {
+      .metabox--position-up {
+        transform: translateY(-183%); } }
+  .metabox--with-home-link {
+    padding: 0; }
+  .metabox__main {
+    color: #000;
+    padding: 10px 15px 10px 11px; }
+  .metabox p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #181818; }
+  .metabox a {
+    color: #f5f5dc;
+    text-decoration: none;
+    font-weight: bold; }
+  .metabox a:focus {
+    color: #00A6DA; }
+  .metabox .metabox__blog-home-link {
+    background-color: #00A6DA;
+    color: #181818;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 3px 0 0 3px;
+    font-weight: normal; }
+  .metabox .metabox__blog-home-link:hover {
+    text-decoration: none;
+    background-color: #00A6DA; }
+
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
 
@@ -886,7 +928,7 @@ body {
   padding-top: 5rem; }
 
 .section-about {
-  margin-top: 10rem; }
+  margin-top: -5rem; }
   .section-about__nav {
     font-size: 1.2rem;
     text-transform: uppercase; }
@@ -948,6 +990,9 @@ body {
     -webkit-background-clip: text;
     color: transparent; }
 
+.section-metabox {
+  clear: both; }
+
 .section-blog {
   padding-bottom: 1rem !important;
   padding-top: 1rem !important; }
@@ -982,6 +1027,8 @@ body {
   .section-blog__card-body h4 > a {
     color: #181818;
     text-decoration: none; }
+  .section-blog__card-body h4 > a:focus {
+    color: #00A6DA; }
   .section-blog__card-body h4 > a:hover {
     text-decoration: underline; }
   .section-blog__quote {
@@ -990,13 +1037,20 @@ body {
 .blockquote {
   margin: 0 0 1rem; }
 
-a:-webkit-any-link {
-  color: #181818; }
-
 .triple {
   width: 30%;
   float: left;
   margin-left: 1rem; }
+  @media only screen and (max-width: 37.5em) {
+    .triple {
+      width: 100%; } }
+
+.section-single__content {
+  margin: -15rem 0 10rem;
+  font-size: 1.6rem;
+  color: #181818; }
+  .section-single__content:not(:last-child) {
+    margin-bottom: 3rem; }
 
 .content p {
   font-size: 1.6rem;

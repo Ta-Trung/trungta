@@ -41,9 +41,14 @@
         text-decoration: none;
     }
 
+    &__card-body h4>a:focus{
+        color:$color-primary;
+    }
+
     &__card-body h4>a:hover{
         text-decoration: underline;
     }
+    
 
     &__quote{
         padding: 1rem;
@@ -54,12 +59,26 @@
     margin: 0 0 1rem;
 }
 
-a:-webkit-any-link{
-    color:$color-black;
-}
-
 .triple{
     width: 30%;
 	float: left;
     margin-left:1rem;
+
+    @include respond(phone){
+        width: 100%;
+    }
+}
+
+.section-single{
+
+
+    &__content{
+        margin: -15rem 0 10rem;
+        font-size: $default-font-size;
+        color:$color-black;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+    }
 }
