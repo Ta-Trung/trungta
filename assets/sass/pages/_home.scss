@@ -34,10 +34,51 @@
 
 }
 
+.section-ajankohtaista{
+  background-color:$color-primary;
+  
+
+  &__viva{
+    border-bottom: .2rem solid $color-black;
+    position: relative;
+    height: .5rem;
+    width: 25%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__item{
+    position: relative;
+    background-color: $color-white;
+    padding: 4rem 5rem;
+    line-height: 1.5;
+    margin-bottom:10rem;
+  }
+
+  &__content{
+    padding: .3rem;
+  }
+
+  &__paivamaara{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__link{
+    display: block;
+    margin-top: .2rem;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+  }
+}
+
 
 .section-lupaus {
     padding: 20rem 0;
-    margin-top: -15rem;
+    margin-top: -10rem;
 
     @include respond(tab-port) {
       padding: 10rem 0;
