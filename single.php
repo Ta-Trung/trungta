@@ -27,7 +27,7 @@ get_header();
 				<div class="col">
 					<div class="metabox metabox--position-up metabox--with-home-link">
 						<p><a class="metabox__blog-home-link" href="<?php echo site_url('/blog') ?>"><i class="fa fa-home" aria-hidden="true"></i> 
-						Blog Home</a> <span class="metabox__main"><?php the_author_posts_link(); ?> kirjoitti <?php the_time('n.j.y') ?> ja postattu tähän kategoriin nimellä <?php echo get_the_category_list(', '); ?></span></p>
+						Blogin etusivuun</a> <span class="metabox__main"><a><?php the_author_posts_link(); ?> kirjoitti <?php the_time('n.j.y') ?> ja postattu tähän kategoriin nimellä <?php echo get_the_category_list(', '); ?></a></span></p>
 					</div>
 				</div>
 			</div>
