@@ -1,14 +1,14 @@
 .metabox {
     background-color: $color-beige;
-    border-radius: 3px;
-    padding: 10px 15px;
+    border-radius: .3rem;
+    padding: 1rem 1.5rem;
     display: inline-block;
-    margin-bottom: 30px;
-    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.07);
+    margin-bottom: 3rem;
+    box-shadow: .2rem .2rem .1rem rgba(0, 0, 0, 0.07);
   
     &--position-up {
       top: 0;
-      transform: translateY(-322%);
+      transform: translateY(-293%);
 
       @include respond(phone){
         transform: translateY(-182%);
@@ -25,7 +25,11 @@
   
     &__main {
       color:#000;
-      padding: 10px 15px 10px 11px;
+      padding: 1rem 1.5rem 1rem 1.1rem;
+    }
+
+    &__main>a{
+      color:#000 !important;
     }
 
     p {
@@ -35,7 +39,7 @@
     }
   
     a {
-      color: $color-beige;
+      color: $color-black;
       text-decoration: none;
       font-weight: bold;
     }
@@ -48,8 +52,8 @@
       background-color: $color-primary;
       color: $color-black;
       display: inline-block;
-      padding: 10px 15px;
-      border-radius: 3px 0 0 3px;
+      padding: 1rem 1.5rem;
+      border-radius: .3rem 0 0 .3rem;
       font-weight: normal;
     }
   
