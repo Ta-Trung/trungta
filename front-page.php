@@ -36,6 +36,40 @@ get_header();
         </div>
     </section>
 
+       <!--AJANKOHTAISTA-->
+       <section class="section-ajankohtaista">
+        <div class="u-center-text u-margin-bottom-big">
+            <div class="row">
+                <div class="col">
+                <h2 class="heading-secondary">
+                    Ajankohtaista
+                </h2>
+                <div class="section-ajankohtaista__viva"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-2 section-ajankohtaista__item">
+                <div class="section-ajankohtaista__content">
+                    <span class="section-ajankohtaista__paivamaara">23.1.2022</span>
+                    <h2 class="heading-tertiary">Lorem ipsum dolor sit amet.</h2>
+                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, voluptate.</p>
+                    <a href="#" class="btn btn--primary btn--animated">Lue lisää</a>
+                </div>
+            </div>
+
+            <div class="col-1-of-2 section-ajankohtaista__item">
+                <div class="section-ajankohtaista__content">
+                    <span class="section-ajankohtaista__paivamaara">23.1.2022</span>
+                    <h2 class="heading-tertiary">Lorem ipsum dolor sit amet.</h2>
+                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, voluptate.</p>
+                    <a href="#" class="btn btn--primary btn--animated">Lue lisää</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!--Lupaus-->
     <section class="section-lupaus">
         <div class="u-center-text u-margin-bottom-big">

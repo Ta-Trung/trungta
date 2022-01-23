@@ -1,6 +1,11 @@
 <?php
 /**
- * The template for displaying archive pages
+ * The main template file
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -12,40 +17,37 @@ get_header();
 
 	<main id="primary" class="site-main">
 
-		<?php if ( have_posts() ) : ?>
+    <div class="about-header u-center-text u-margin-bottom-big">
+            <h2 class="heading-subpage"><?php the_archive_title(); ?></h2>
+            <p class="paragraph-subpage"><?php the_archive_description() ?></p>
+    </div>
 
-			<header class="page-header">
-				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
-
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
-
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
-
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
+    <!--BLOG-->
+    <div class="section-blog">
+        <div class="row">
+                <div class="col section-blog__card-columns">
+                    <?php  
+                        while(have_posts()) {
+                            the_post(); ?>
+                    <div class="section-blog__card triple">
+                        <img src="https://source.unsplash.com/random/300x200" alt="Image One" class="section-blog__blog-img">
+                        <div class="section-blog__card-body">
+                            <h4 class="heading-tertiary"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                            </h4>
+                            <small class="text-muted"><?php the_author_posts_link(); ?> kirjoitti <?php the_time('n.j.y') ?> ja postattu tähän kategoriin nimellä <?php echo get_the_category_list(', '); ?></small>
+                            <hr>
+                            <?php the_excerpt(); ?>
+                            <p><a class= "btnblog btnblog--primary" href="<?php the_permalink(); ?>">Lue kirjoittamani tarina &raquo;</a></p>
+                        </div>
+                    </div>
+                        <?php }
+                    echo paginate_links();
+                    ?>
+                </div>
+        </div>
+    </div>
 
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
 get_footer();

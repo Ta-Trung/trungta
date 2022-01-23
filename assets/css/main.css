@@ -1026,6 +1026,11 @@ body {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     padding: 1.25rem; }
+  .section-blog__card-body a {
+    color: #181818 !important; }
+  .section-blog__card-body p {
+    font-size: 1rem;
+    margin-top: 1.5rem; }
   .section-blog__card-body h4 > a {
     color: #181818;
     text-decoration: none; }
@@ -1170,9 +1175,38 @@ body {
   .hero__owner-img {
     width: 100%; }
 
+.section-ajankohtaista {
+  background-color: #00A6DA; }
+  .section-ajankohtaista__viva {
+    border-bottom: 0.2rem solid #181818;
+    position: relative;
+    height: .5rem;
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .section-ajankohtaista__item {
+    position: relative;
+    background-color: #fff;
+    padding: 4rem 5rem;
+    line-height: 1.5;
+    margin-bottom: 10rem; }
+  .section-ajankohtaista__content {
+    padding: .3rem; }
+  .section-ajankohtaista__paivamaara {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase; }
+  .section-ajankohtaista__link {
+    display: block;
+    margin-top: .2rem;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none; }
+
 .section-lupaus {
   padding: 20rem 0;
-  margin-top: -15rem; }
+  margin-top: -10rem; }
   @media only screen and (max-width: 56.25em) {
     .section-lupaus {
       padding: 10rem 0; } }
