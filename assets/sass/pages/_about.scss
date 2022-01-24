@@ -61,7 +61,7 @@
   
       &__link{
         display: block;
-        color: $color-black;
+        color: $color-black !important;
         padding: .8rem 1.6rem;
         text-decoration: none;
       }

@@ -23,10 +23,10 @@ get_header();
 		?>
 
 		<!--ABOUT TRUNG-->
-        <div class="about-header u-center-text u-margin-bottom-big">
-            <h2 class="heading-subpage"><?php the_title() ?></h2>
-            <p class="paragraph-subpage">TÄN ON VAIHDETTAVA</p>
-        </div>
+            <div class="about-header u-center-text u-margin-bottom-big" style="background-image: url(<?php $pageBannerImage = get_field('page_banner_background_image'); echo $pageBannerImage['sizes']['pageBanner'] ?>);" >
+                <h2 class="heading-subpage"><?php the_title() ?></h2>
+                <p class="paragraph-subpage"><?php the_field('page_banner_subtitle') ?></p>
+            </div>
         
         <!--META-->
         <div class="section-metabox">
@@ -66,13 +66,14 @@ get_header();
                 </div>
                 
                 <div class="col-1-of-2">
+                    <?php the_post_thumbnail('portrait'); ?>
                     <nav class="section-about__nav">
                         <ul class="section-about__list">
-                            <li><a href="about.html" class="section-about__link">Tieto Trungista</a></li>
-                            <li><a href="#" class="section-about__link">Palvelut</a></li>
-                            <li><a href="#" class="section-about__link">Refrenssit</a></li>
-                            <li><a href="#" class="section-about__link">Varaa keskusteluaika</a></li>
-                            <li><a href="#" class="section-about__link">Hyödyt julkaisut</a></li>
+                            <li><a href="<?php echo site_url('/tieto-trungista') ?>" class="section-about__link">Tieto Trungista</a></li>
+                            <li><a href="<?php echo site_url('/palvelut') ?>" class="section-about__link">Palvelut</a></li>
+                            <li><a href="<?php echo site_url('/refrenssit') ?>" class="section-about__link">Refrenssit</a></li>
+                            <li><a href="<?php echo site_url('/varaa-keskusteluaika') ?>" class="section-about__link">Varaa keskusteluaika</a></li>
+                            <li><a href="<?php echo site_url('/blog') ?>" class="section-about__link">Hyödyt julkaisut</a></li>
                         </ul>
                     </nav>
                 </div>

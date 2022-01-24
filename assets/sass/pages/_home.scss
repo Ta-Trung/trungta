@@ -60,6 +60,11 @@
     padding: .3rem;
   }
 
+  &__content a{
+    padding: .3rem;
+    color:$color-black;
+  }
+
   &__paivamaara{
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
