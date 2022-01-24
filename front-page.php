@@ -50,23 +50,23 @@ get_header();
         </div>
 
         <div class="row">
-            <div class="col-1-of-2 section-ajankohtaista__item">
-                <div class="section-ajankohtaista__content">
-                    <span class="section-ajankohtaista__paivamaara">23.1.2022</span>
-                    <h2 class="heading-tertiary">Lorem ipsum dolor sit amet.</h2>
-                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, voluptate.</p>
-                    <a href="#" class="btn btn--primary btn--animated">Lue lisää</a>
-                </div>
-            </div>
+            <?php
+                $homepagePosts = new WP_Query(array(
+                    'posts_per_page'  => 2
+                ));
 
-            <div class="col-1-of-2 section-ajankohtaista__item">
-                <div class="section-ajankohtaista__content">
-                    <span class="section-ajankohtaista__paivamaara">23.1.2022</span>
-                    <h2 class="heading-tertiary">Lorem ipsum dolor sit amet.</h2>
-                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, voluptate.</p>
-                    <a href="#" class="btn btn--primary btn--animated">Lue lisää</a>
-                </div>
-            </div>
+                while($homepagePosts->have_posts()){
+                    $homepagePosts->the_post();?>
+                    <div class="col-1-of-2 section-ajankohtaista__item">
+                        <div class="section-ajankohtaista__content">
+                            <span class="section-ajankohtaista__paivamaara"><a href="<?php the_permalink(); ?>"><?php the_time('d'); ?>.<?php the_time('M'); ?>.<?php the_time('y'); ?></a></span>
+                            <h2 class="heading-tertiary"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                            <p class="paragraph"><?php echo wp_trim_words(get_the_content(), 18); ?></p>
+                            <a href="<?php the_permalink(); ?>" class="btn btn--primary btn--animated">Lue lisää</a>
+                        </div>
+                    </div>
+                <?php } wp_reset_postdata();
+            ?>
         </div>
     </section>
 

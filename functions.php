@@ -46,6 +46,14 @@ function trungta_setup() {
 		*/
 	add_theme_support( 'post-thumbnails' );
 
+	/*
+	* Adjust banners
+	* 
+	*/
+	add_image_size('landscape', 400 ,260, true);
+	add_image_size('portrait', 480 ,650, true);
+	add_image_size('pageBanner', 1500 ,350, true);
+
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
@@ -149,6 +157,7 @@ function trungta_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'trungta_scripts' );
+
 
 /**
  * Implement the Custom Header feature.
