@@ -13,15 +13,13 @@
  */
 
 get_header();
+pageBanner(array(
+    'title' => get_the_archive_title(),
+    'subtitle'  => get_the_archive_description(),
+))
 ?>
 
 	<main id="primary" class="site-main">
-
-    <div class="about-header u-center-text u-margin-bottom-big">
-            <h2 class="heading-subpage"><?php the_archive_title(); ?></h2>
-            <p class="paragraph-subpage"><?php the_archive_description() ?></p>
-    </div>
-
     <!--BLOG-->
     <div class="section-blog">
         <div class="row">
