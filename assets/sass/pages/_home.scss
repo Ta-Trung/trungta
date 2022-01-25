@@ -1,6 +1,6 @@
 .section-hero{
       background-color: $color-black;
-      padding: 4.8rem 0 9.6rem 0;
+      padding: 5.8rem 0 9.6rem 0;
       -webkit-clip-path: polygon(100% 0, 100% 75%, 67% 85%, 0 75%, 0 0);
       clip-path: polygon(100% 0, 100% 75%, 67% 85%, 0 75%, 0 0);
 
@@ -62,7 +62,8 @@
 
   &__content a{
     padding: .3rem;
-    color:$color-black;
+    color:$color-black !important;
+    text-decoration: none;
   }
 
   &__paivamaara{

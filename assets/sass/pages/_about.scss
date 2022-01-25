@@ -31,13 +31,23 @@
   
   
   .about-header{
-    height: 18rem;
+    height: 30rem;
     background-position: 0 -360px;
     background-attachment: fixed;
     background-color: $color-primary;
     color: $color-white;
     border-bottom: .1rem $color-white solid;
     padding-top: 5rem;
+    opacity: 0.33;
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    &__img{
+      
+    }
   
   }
   

@@ -23,11 +23,12 @@ get_header();
 		?>
 
 		<!--ABOUT TRUNG-->
-            <div class="about-header u-center-text u-margin-bottom-big" style="background-image: url(<?php $pageBannerImage = get_field('page_banner_background_image'); echo $pageBannerImage['sizes']['pageBanner'] ?>);" >
+        <div class="about-header">
+            <div class="about-header__img u-center-text u-margin-bottom-big" style="background-image: url(<?php $pageBannerImage = get_field('page_banner_background_image'); echo $pageBannerImage['sizes']['pageBanner'] ?>);" >
                 <h2 class="heading-subpage"><?php the_title() ?></h2>
                 <p class="paragraph-subpage"><?php the_field('page_banner_subtitle') ?></p>
             </div>
-        
+        </div>
         <!--META-->
         <div class="section-metabox">
             <div class="row">
