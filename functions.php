@@ -47,7 +47,7 @@ function trungta_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	/*
-	* Adjust banners
+	* Adjust banner's different sizes
 	* 
 	*/
 	add_image_size('landscape', 400 ,260, true);
