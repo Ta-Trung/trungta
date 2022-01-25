@@ -32,23 +32,19 @@
   
   .about-header{
     height: 30rem;
-    background-position: 0 -360px;
+    background-position: 0 1.3rem;
     background-attachment: fixed;
-    background-color: $color-primary;
-    color: $color-white;
     border-bottom: .1rem $color-white solid;
-    padding-top: 5rem;
-    opacity: 0.33;
     background-size: cover;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-
-    &__img{
-      
+    opacity: 0.33;
+    
+    &__content{
+      margin: -20rem 0 25rem 0;
     }
-  
   }
   
   .section-about{

@@ -12,6 +12,32 @@ if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
 
+function pageBanner($args = NULL){
+	if (!$args['title']) {
+		$args['title'] = get_the_title();
+	}
+
+	if (!$args['subtitle']) {
+		$args['subtitle'] = get_field('page_banner_subtitle');
+	}
+
+	if (!$args['photo']) {
+		if (get_field('page_banner_background_image') AND !is_archive() AND !is_home() ) {
+			$args['photo'] = get_field('page_banner_background_image')['sizes']['pageBanner'];
+		} else {
+			$args['photo'] = get_theme_file_uri('/images/Trung-Ta-2.jpg');
+		}
+	}
+?>
+		<div class="about-header" style="background-image: url(<?php echo $args['photo']; ?>);" ></div>
+			<div class="about-header__content u-center-text" >
+				<h2 class="heading-subpage"><?php echo $args['title']; ?></h2>
+				<p class="paragraph-subpage"><?php echo $args['subtitle']; ?></p>
+		</div>
+<?php }
+
+
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *

@@ -13,15 +13,13 @@
  */
 
 get_header();
+pageBanner(array(
+    'title' => 'Tervetuloa blogkirjoitukseeni',
+    'subtitle'  => 'Täällä saat vinkkiä ja ohjeita nettisivun toteutuksessa'
+))
 ?>
 
 	<main id="primary" class="site-main">
-
-    <div class="about-header u-center-text u-margin-bottom-big">
-            <h2 class="heading-subpage">Tervetuloa blogkirjoitukseeni</h2>
-            <p class="paragraph-subpage">Täällä saat vinkkiä ja ohjeita nettisivun toteutuksessa</p>
-    </div>
-
     <!--BLOG-->
     <div class="section-blog">
         <div class="row">

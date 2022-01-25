@@ -14,12 +14,9 @@ get_header();
 
 		<?php
 		while ( have_posts() ) {
-			the_post();?>
-
-		<div class="about-header u-center-text u-margin-bottom-big">
-            <h2 class="heading-subpage"><?php the_title() ?></h2>
-            <p class="paragraph-subpage">TÄN ON VAIHDETTAVA</p>
-        </div>
+			the_post();
+			pageBanner();
+			?>
 		
 		<!--SINGLES POSTS-->
 		<section class="section-single">
