@@ -294,27 +294,11 @@ get_header();
                     <form action="#" class="form">
                         <div class="u-margin-bottom-medium">
                             <h2 class="heading-secondary">
-                                Ota minuun yhteyttä
+                                Ota <span style="color:#00A6DA">minuun</span> yhteyttä
                             </h2>
                         </div>
 
-                        <div class="form__group">
-                            <input type="text" class="form__input" placeholder="Kuka sinä olet?" id="name" required>
-                            <label for="name" class="form__label">Full name</label>
-                        </div>
-
-                        <div class="form__group">
-                            <input type="email" class="form__input" placeholder="Sähköpostisi" id="email" required>
-                            <label for="email" class="form__label">Email address</label>
-                        </div>
-
-                        <div class="form__group">
-                            <textarea rows="4" cols="50" name="comment" form="usrform" class="form__input" placeholder="Kirjoita viestisi tänne"></textarea>
-                        </div>
-
-                        <div class="form__group">
-                            <button class="btn btn--blue">Lähetä Trungille &rarr;</button>
-                        </div>
+                        <div><?php echo do_shortcode('[wpforms id="45"]'); ?></div>
                     </form>
                 </div>
             </div>

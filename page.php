@@ -20,10 +20,12 @@ get_header();
 		<?php
 		while ( have_posts() ) {
 			the_post();
-            pageBanner();
-		?>
-        
-		<!--ABOUT TRUNG-->
+            pageBanner(array(
+                'title' => NULL,
+                'subtitle' => NULL,
+                'photo' => NULL
+                ))
+		    ?>
         
         <!--META-->
         <div class="section-metabox">

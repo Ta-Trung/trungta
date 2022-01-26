@@ -441,10 +441,17 @@ body {
   .lupaus-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
-.form__group:not(:last-child) {
+.wpforms-field-container:not(:last-child) {
   margin-bottom: 2rem; }
 
-.form__input {
+.wpforms-field-label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  display: block;
+  transition: all .3s; }
+
+.wpforms-field-medium {
   font-size: 1.5rem;
   font-family: inherit;
   color: inherit;
@@ -456,30 +463,45 @@ body {
   width: 90%;
   display: block;
   transition: all .3s; }
-  @media only screen and (max-width: 56.25em) {
-    .form__input {
-      width: 100%; } }
-  .form__input:focus {
-    outline: none;
-    box-shadow: 0 1rem 2rem rgba(24, 24, 24, 0.1);
-    border-bottom: 3px solid #00A6DA; }
-  .form__input:focus:invalid {
-    border-bottom: 3px solid #ff7730; }
-  .form__input::-webkit-input-placeholder {
-    color: #999; }
 
-.form__label {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-left: 2rem;
-  margin-top: .7rem;
-  display: block;
-  transition: all .3s; }
+.wpforms-field-medium:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(24, 24, 24, 0.1);
+  border-bottom: 3px solid #00A6DA; }
 
-.form__input:placeholder-shown + .form__label {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-4rem); }
+.wpforms-field-medium:focus:invalid {
+  border-bottom: 3px solid #0083AB; }
+
+.wpforms-field-medium::-webkit-input-placeholder {
+  color: #999; }
+
+.wpforms-submit, .wpforms-submit:link, .wpforms-submit:visited {
+  background-color: #00A6DA;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all .2s;
+  position: relative;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer; }
+
+.wpforms-submit:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(119, 119, 119, 0.2); }
+
+.wpforms-submit:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0; }
+
+.wpforms-submit:active, .wpforms-submit:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(119, 119, 119, 0.2); }
 
 .metabox {
   background-color: #f5f5dc;

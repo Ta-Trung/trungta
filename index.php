@@ -15,7 +15,8 @@
 get_header();
 pageBanner(array(
     'title' => 'Tervetuloa blogkirjoitukseeni',
-    'subtitle'  => 'Täällä saat vinkkiä ja ohjeita nettisivun toteutuksessa'
+    'subtitle'  => 'Täällä saat vinkkiä ja ohjeita nettisivun toteutuksessa',
+    'photo' => NULL
 ))
 ?>
 
