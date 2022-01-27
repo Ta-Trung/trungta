@@ -1,0 +1,29 @@
+.wp-block-latest-posts__list{
+    background-color: $color-black;
+    padding: 0 0;
+    font-size: 1.4rem;
+    color: $color-grey-light-1;
+
+    @include respond(tab-port) {
+        padding: 8rem 0;
+    }
+
+}
+
+.wp-block-latest-posts__list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.wp-block-latest-posts__list li>a:link, a:visited{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: $color-white;
+    transition: all 0.3s;
+}
+
+.wp-block-latest-posts__list li>a:hover, a:active{
+    color: $color-primary;
+}
