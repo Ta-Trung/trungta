@@ -21,13 +21,13 @@
 
                     <ul class="footer__social-links">
                         <li>
-                            <a class="footer__link" href="#"><i class="footer__icon fab fa-instagram"></i></a>
+                            <a class="footer__link" href="https://www.instagram.com/trung.ta.fi/?hl=fi"><i class="footer__icon fab fa-instagram"></i></a>
                         </li>
                         <li>
-                            <a class="footer__link" href="#"><i class="footer__icon fab fa-facebook"></i></a>
+                            <a class="footer__link" href="https://www.facebook.com/TrungTaFinland"><i class="footer__icon fab fa-facebook"></i></a>
                         </li>
                         <li>
-                            <a class="footer__link" href="#"><i class="footer__icon fab fa-youtube"></i></a>
+                            <a class="footer__link" href="https://www.youtube.com/channel/UC9LQdfz3AYb2zrAxS3CNRmg"><i class="footer__icon fab fa-youtube"></i></a>
                         </li>
                     </ul>
 
@@ -50,6 +50,7 @@
                         Trung Ta<br>
                         Palstakatu 7-9<br>
                         11100 Riihimäki<br>
+                        Y-tunnus: 2885161-6
                     </p>
                     <p>
                         <a class="footer__link" href="tel:+35844123776">+358440123776</a> (myös Whatappissa)
@@ -57,12 +58,12 @@
                 </div>
 
                 <div class="col-1-of-4">
-                    <p class="footer__heading">Julkaisut</p>
-                    <ul class="footer__nav">
-                      <li><a class="footer__link" href="<?php echo site_url('/tietosuojaseloste')?>">Tietosuojaseloste</a></li>
-                      <li><a class="footer__link" href="#">Pyydä tarjous</a></li>
-                      <li><a class="footer__link" href="#">Hinnasto</a></li>
-                    </ul>
+                    <p class="footer__heading">Uusimmat Julkaisut</p>
+                    <?php 
+                        if(is_active_sidebar( 'footer-one' )){
+                            dynamic_sidebar( 'footer-one' );
+                        }
+                    ?>
                 </div>
 
                 <div class="col-1-of-4">

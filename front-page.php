@@ -166,9 +166,10 @@ get_header();
                             <div class="card__picture card__picture--1">
                                 &nbsp;
                             </div>
+                            <i class="card__icon fas fa-thumbs-up"></i><br>
                             <h4 class="card__heading">
-                                <span class="card__heading-span card__heading-span--1">WP-Nettisivujen 
-                                    Peruspaketti</span>
+                                WP-Nettisivujen 
+                                Peruspaketti
                             </h4>
                             <div class="card__details">
                                 <ul>
@@ -185,8 +186,9 @@ get_header();
                                 <div class="card__price-box">
                                     <p class="card__price-only">alk.</p>
                                     <p class="card__price-value">1350,00</p>
+                                    <p>&#40;Hintaan lisätään 24&#37; alv&#41;</p>
                                 </div>
-                                <a href="#popup" class="btn btn--grey">Katso lisää!</a>
+                                <a href="#popup" class="btn btn--primary">Katso lisää!</a>
                             </div>
                         </div>
                     </div>
@@ -198,9 +200,10 @@ get_header();
                              <div class="card__picture card__picture--1">
                                  &nbsp;
                              </div>
+                             <i class="card__icon fas fa-thumbs-up"></i><br>
                              <h4 class="card__heading">
-                                 <span class="card__heading-span card__heading-span--1">WP-Nettisivujen 
-                                    Tehokaspaketti</span>
+                                WP-Nettisivujen 
+                                    Tehokaspaketti
                              </h4>
                              <div class="card__details">
                                  <ul>
@@ -217,8 +220,9 @@ get_header();
                                  <div class="card__price-box">
                                      <p class="card__price-only">alk.</p>
                                      <p class="card__price-value">2500,00</p>
+                                     <p>&#40;Hintaan lisätään 24&#37; alv&#41;</p>
                                  </div>
-                                 <a href="#popup" class="btn btn--grey">Katso lisää!</a>
+                                 <a href="#popup" class="btn btn--primary">Katso lisää!</a>
                              </div>
                         </div>
                     </div>
@@ -230,9 +234,10 @@ get_header();
                              <div class="card__picture card__picture--1">
                                  &nbsp;
                              </div>
-                             <h4 class="card__heading">
-                                 <span class="card__heading-span card__heading-span--1">WOO-Verkkokauppojen 
-                                    Tehokaspaketti</span>
+                             <i class="card__icon fas fa-thumbs-up"></i><br>
+                             <h4 class="card__heading--1">
+                                 WOO-Verkkokauppojen 
+                                    Tehokaspaketti
                              </h4>
                              <div class="card__details">
                                  <ul>
@@ -249,8 +254,10 @@ get_header();
                                  <div class="card__price-box">
                                      <p class="card__price-only">alk.</p>
                                      <p class="card__price-value">4000,00</p>
+                                     <p>&#40;Hintaan lisätään 24&#37; alv&#41;</p>
+
                                  </div>
-                                 <a href="#popup" class="btn btn--grey">Pyydä tarjous!</a>
+                                 <a href="#popup" class="btn btn--primary">Katso lisää!</a>
                              </div>
                         </div>
                     </div>
@@ -262,9 +269,10 @@ get_header();
                              <div class="card__picture card__picture--1">
                                  &nbsp;
                              </div>
-                             <h4 class="card__heading">
-                                 <span class="card__heading-span card__heading-span--1">Muut 
-                                    ohjelmistokehitykset</span>
+                             <i class="card__icon fas fa-thumbs-up"></i><br>
+                             <h4 class="card__heading--2">
+                                 Muut 
+                                    ohjelmistokehitykset
                              </h4>
                              <div class="card__details">
                                  <ul>
@@ -277,7 +285,7 @@ get_header();
                         </div>
                         <div class="card__side card__side--back card__side--back-1">
                              <div class="card__cta">
-                                 <a href="#popup" class="btn btn--grey">Katso lisää!</a>
+                                 <a href="#popup" class="btn btn--primary">Katso lisää!</a>
                              </div>
                         </div>
                     </div>
@@ -314,18 +322,13 @@ get_header();
             <div class="popup__right">
                 <a href="#section-hinnasto" class="popup__close">&times;</a>
                 <h2 class="heading-secondary u-margin-bottom-small">WP-Nettisivujen Peruspaketti</h2>
-                <h3 class="heading-tertiary u-margin-bottom-small">Hintaan lisätään 24% alv</h3>
-                <p class="popup__text">
-                    Laadukas nettisivujen paketti, jossa on kevyt hakukoneoptimointi ja verkkosivun käyttöliittymä suunnitellaan ja toteutetaan 
-                    luotettavalla valmisteemalla. Valmis nettisivu toimii reponsiivisesti kaikissa laitteissa ja noudattaa 
-                    nettisivuteon standardia. Saadaan myös saavutettavuutta kuntoon, saavutettavuudella tarkoittaa verkkosivun 
-                    helppokäyttösyys ja sivusi on saatavilla kaikille ihmisille. Lopuksi asennetaan Googlen ja Facebookin 
-                    seurantoja sivujen analysoimiseksi ja lisätään myös yhteydenottolomaketta ja mahdollisesti Googlen karttaa 
-                    pyytäessä. Sivuston valmistua otan heti sivusta varmuuskopion ja tarjoan käyttökoulutus 
-                    uudesta sivustosta yhdessä päivässä myös ilmainen jatkoylläpito kuukaudeksi, sen jälkeen veloitan 45€/tunti + alv.
-                </p>
-
-                <p class="popup__text">Hinta alk. 1350€</p>
+                    <?php
+                        if(is_active_sidebar( 'package-one' )){
+                            dynamic_sidebar( 'package-one' );
+                        } 
+                    
+                    ?>
+                <p class="popup__text">Hinta alk. 1350€ (Hintaan lisätään 24% alv)</p>
                 <a href="#section-varaus" class="btn btn--blue">Pyydä tarjous</a>
             </div>
         </div>

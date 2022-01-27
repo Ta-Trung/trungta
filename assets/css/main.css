@@ -316,9 +316,20 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 52rem; }
+  height: 47rem; }
+  .card__icon {
+    font-size: 5rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #0CBFF5, #0083AB);
+    -webkit-background-clip: text;
+    color: transparent;
+    position: absolute;
+    top: 3rem;
+    right: -3rem;
+    width: 75%; }
   .card__side {
-    height: 52rem;
+    height: 47rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -333,7 +344,7 @@ body {
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #0CBFF5, #0083AB); }
+        background-image: linear-gradient(to right bottom, #999, #333); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -347,17 +358,37 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #0CBFF5, #0083AB); }
+      background-image: linear-gradient(to right bottom, #999, #333); }
   .card__heading {
-    font-size: 1.6rem;
-    font-weight: 300;
+    font-size: 1.8rem;
+    font-weight: 700;
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
     color: white;
     position: absolute;
-    top: 11rem;
-    right: 5rem;
+    top: 10rem;
+    right: 3rem;
     width: 75%; }
+    .card__heading--1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      color: white;
+      position: absolute;
+      top: 10rem;
+      right: 3rem;
+      width: 75%; }
+    .card__heading--2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      color: white;
+      position: absolute;
+      top: 10rem;
+      right: 3rem;
+      width: 75%; }
   .card__heading-span {
     padding: 0.5rem 1.5rem;
     -webkit-box-decoration-break: clone;
@@ -365,14 +396,14 @@ body {
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(119, 119, 119, 0.85), rgba(43, 43, 43, 0.85)); }
   .card__details {
-    padding: 3rem; }
+    padding: 1.7rem; }
     .card__details ul {
       list-style: none;
       width: 80%;
       margin: 0 auto; }
       .card__details ul li {
         text-align: center;
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #00A6DA; }
@@ -385,7 +416,7 @@ body {
     text-align: center; }
   .card__price-box {
     text-align: center;
-    color: #181818;
+    color: #fff;
     margin-bottom: 8rem;
     font-weight: 700; }
   .card__price-only {
@@ -619,6 +650,7 @@ body {
     width: 100%; }
   .popup__text {
     font-size: 1.4rem;
+    font-weight: 700;
     margin-bottom: 4rem;
     -moz-column-count: 2;
     -moz-column-gap: 4rem;
@@ -648,6 +680,44 @@ body {
     line-height: 1; }
   .popup__close:hover {
     color: #00A6DA; }
+
+.widget_text p {
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+  -moz-column-count: 2;
+  -moz-column-gap: 4rem;
+  -moz-column-rule: 1px solid #eee;
+  column-count: 2;
+  column-gap: 4rem;
+  column-rule: 1px solid #eee;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto; }
+
+.wp-block-latest-posts__list {
+  background-color: #181818;
+  padding: 0 0;
+  font-size: 1.4rem;
+  color: #f7f7f7; }
+  @media only screen and (max-width: 56.25em) {
+    .wp-block-latest-posts__list {
+      padding: 8rem 0; } }
+
+.wp-block-latest-posts__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem; }
+
+.wp-block-latest-posts__list li > a:link, a:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #fff;
+  transition: all 0.3s; }
+
+.wp-block-latest-posts__list li > a:hover, a:active {
+  color: #00A6DA; }
 
 .video {
   width: 75%;
