@@ -24,10 +24,10 @@ get_header();
                     <h1 class="heading-primary">
                         <span class="heading-primary--main">JOKO NETTISIVUSI SAATU PYSTYYN?</span>
                     </h1>
-                    <p class="hero__banner-description">Nettisivu on varmaan sijoitus, joka maksaisi ennemmin tai myöhemmin 
-                        rahat takaisin sinulle. Minulla saat apua nettisivun sekä suunnittelussa 
+                    <p class="hero__banner-description">Nettisivut ovat varmaan sijoituksia, jotka maksaisivat sinulle ennemmin tai myöhemmin
+                        . Minulla saat apua juuri nettisivun sekä suunnittelussa 
                         että toteutuksessa.</p>
-                    <a href="#section-varaus" class="btn btn--primary btn--animated">Varaa soittoaika</a>
+                    <a href="<?php echo site_url( '/varaa-keskusteluaika' ) ?>" class="btn btn--primary btn--animated">Varaa soittoaika</a>
                 </div>
                 <div class="col-1-of-2 hero__owner-img-box">
                     <img src=<?php echo get_theme_file_uri( './images/trung-ta-lapi-1.png' )?> alt="Trung Ta" class="hero__owner-img">
@@ -41,7 +41,7 @@ get_header();
         <div class="u-center-text u-margin-bottom-big">
             <div class="row">
                 <div class="col">
-                <h2 class="heading-secondary">
+                <h2 class="heading-secondary section-ajankohtaista__heading">
                     Ajankohtaista
                 </h2>
                 <div class="section-ajankohtaista__viva"></div>
@@ -123,7 +123,7 @@ get_header();
 
         <div class="u-center-text u-margin-bottom-big">
             <h2 class="heading-secondary">
-                Kaikkea <span style="color:#00A6DA">digitaalisia palveluja</span> yhdessä paikassa
+                Kaikkia <span style="color:#00A6DA">digitaalisia palveluja</span> yhdessä paikassa
             </h2>
         </div>
 
@@ -222,7 +222,7 @@ get_header();
                                      <p class="card__price-value">2500,00</p>
                                      <p>&#40;Hintaan lisätään 24&#37; alv&#41;</p>
                                  </div>
-                                 <a href="#popup" class="btn btn--primary">Katso lisää!</a>
+                                 <a href="#popup--1" class="btn btn--primary">Katso lisää!</a>
                              </div>
                         </div>
                     </div>
@@ -244,7 +244,7 @@ get_header();
                                      <li>1-5 sivua toteutetaan 
                                         WooCommerce-alustalla</li>
                                      <li>Hakukoneoptimointi</li>
-                                     <li>StoreFront / valmisteema</li>
+                                     <li>StoreFront / kustomoitu teema</li>
                                      <li>Mobiiliresponsiivisuus</li>
                                  </ul>
                              </div>
@@ -257,7 +257,7 @@ get_header();
                                      <p>&#40;Hintaan lisätään 24&#37; alv&#41;</p>
 
                                  </div>
-                                 <a href="#popup" class="btn btn--primary">Katso lisää!</a>
+                                 <a href="#popup--2" class="btn btn--primary">Katso lisää!</a>
                              </div>
                         </div>
                     </div>
@@ -285,7 +285,7 @@ get_header();
                         </div>
                         <div class="card__side card__side--back card__side--back-1">
                              <div class="card__cta">
-                                 <a href="#popup" class="btn btn--primary">Katso lisää!</a>
+                                 <a href="#popup--3" class="btn btn--primary">Katso lisää!</a>
                              </div>
                         </div>
                     </div>
@@ -306,7 +306,7 @@ get_header();
                             </h2>
                         </div>
 
-                        <div><?php echo do_shortcode('[wpforms id="45"]'); ?></div>
+                        <div><?php echo do_shortcode('[wpforms id="56"]'); ?></div>
                     </form>
                 </div>
             </div>
@@ -321,7 +321,7 @@ get_header();
             </div>
             <div class="popup__right">
                 <a href="#section-hinnasto" class="popup__close">&times;</a>
-                <h2 class="heading-secondary u-margin-bottom-small">WP-Nettisivujen Peruspaketti</h2>
+                <h2 class="heading-popup u-margin-bottom-small">WP-Nettisivujen Peruspaketti</h2>
                     <?php
                         if(is_active_sidebar( 'package-one' )){
                             dynamic_sidebar( 'package-one' );
@@ -329,6 +329,65 @@ get_header();
                     
                     ?>
                 <p class="popup__text">Hinta alk. 1350€ (Hintaan lisätään 24% alv)</p>
+                <a href="#section-varaus" class="btn btn--blue">Pyydä tarjous</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup--1">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src=<?php echo get_theme_file_uri( './images/Trung-Ta.jpg' ) ?> alt="Trung Ta" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#section-hinnasto" class="popup__close">&times;</a>
+                <h2 class="heading-popup u-margin-bottom-small">WP-Nettisivujen Tehopaketti</h2>
+                    <?php
+                        if(is_active_sidebar( 'package-two' )){
+                            dynamic_sidebar( 'package-two' );
+                        } 
+                    
+                    ?>
+                <p class="popup__text">Hinta alk. 2500€ (Hintaan lisätään 24% alv)</p>
+                <a href="#section-varaus" class="btn btn--blue">Pyydä tarjous</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup--2">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src=<?php echo get_theme_file_uri( './images/Trung-Ta.jpg' ) ?> alt="Trung Ta" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#section-hinnasto" class="popup__close">&times;</a>
+                <h2 class="heading-popup u-margin-bottom-small">Woo-verkkokauppojen tehopaketti</h2>
+                    <?php
+                        if(is_active_sidebar( 'package-three' )){
+                            dynamic_sidebar( 'package-three' );
+                        } 
+                    
+                    ?>
+                <p class="popup__text">Hinta alk. 4000€ (Hintaan lisätään 24% alv)</p>
+                <a href="#section-varaus" class="btn btn--blue">Pyydä tarjous</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup--3">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src=<?php echo get_theme_file_uri( './images/Trung-Ta.jpg' ) ?> alt="Trung Ta" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#section-hinnasto" class="popup__close">&times;</a>
+                <h2 class="heading-popup u-margin-bottom-small">Muut ohjelmistokehitykset</h2>
+                    <?php
+                        if(is_active_sidebar( 'package-four' )){
+                            dynamic_sidebar( 'package-four' );
+                        } 
+                    
+                    ?>
                 <a href="#section-varaus" class="btn btn--blue">Pyydä tarjous</a>
             </div>
         </div>

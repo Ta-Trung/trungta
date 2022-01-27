@@ -8,6 +8,10 @@
         padding: 8rem 0;
     }
 
+    @include respond(phone){
+        margin-top: -7.5rem;
+    }
+
 }
 
 .wp-block-latest-posts__list{

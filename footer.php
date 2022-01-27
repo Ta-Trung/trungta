@@ -42,7 +42,7 @@
                 </div>
 
             
-                <div class="col-1-of-4">
+                <div class="col-1-of-4 footer-1">
                     <p class="footer__heading">Yhteystiedot</p>
                     <address class="footer__contacts">
                     <p class="footer__address">
@@ -66,7 +66,7 @@
                     ?>
                 </div>
 
-                <div class="col-1-of-4">
+                <div class="col-1-of-4 footer-2">
                     <p class="footer__heading">Sivukartat</p>
 
                     <?php 

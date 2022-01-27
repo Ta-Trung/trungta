@@ -23,7 +23,7 @@
         @include respond(phone){
             position: fixed;
             top: 0;
-            left: -60%;
+            left: -80%;
             z-index: 1500;
 
             opacity: 0;
@@ -43,7 +43,7 @@
     @include respond(phone){
         position: absolute;
         top: 50%;
-        left: 110%;
+        left: 130%;
         transform: translate(-50%,-50%);
         list-style: none;
         text-align: center;
@@ -85,6 +85,10 @@
     @include respond(tab-port) {
         padding: 8rem 0;
     }
+
+    @include respond(tab-port) {
+        padding: 1rem 0;
+    }
 }
 
 .menu-footer-two-container ul{
@@ -105,8 +109,13 @@
     color: $color-primary;
 }
 
+.footer-2{
+    @include respond(phone){
+        margin-top: -7.5rem;
+    }
+}
+
 //BLOG THAT COMPATIBLE WITH WORDPRESS
 .post-item{
     background-color:$color-black;
 }
-

@@ -49,6 +49,17 @@ body{
     }
 }
 
+.heading-popup{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-color: $color-black;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+}
+
 .heading-subpage{
     font-size: 3.5rem;
     text-transform: uppercase;

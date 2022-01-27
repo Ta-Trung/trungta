@@ -5,12 +5,16 @@
   left: 3rem;
   right: 0;
   padding: 2rem 0;
+
+  @include respond(phone){
+    top: 2.3rem;
+  }
     
     &__logo{
       height: 10rem;
 
       @include respond(phone){
-        height: 4.4rem;
+        height: 6.4rem;
       }
     }
   }

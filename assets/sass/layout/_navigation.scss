@@ -22,7 +22,7 @@
         }
 
         @include respond(phone) {
-            top: 3rem;
+            top: 6rem;
             right: 3rem;
             height: 4rem;
             width: 4rem;
@@ -49,7 +49,7 @@
         }
 
         @include respond(phone) {
-            top: 3.5rem;
+            top: 6.5rem;
             right: 3.5rem;
             height: 3rem;
         width: 3rem;
@@ -138,6 +138,10 @@
             height: 2px;
             background-color: $color-grey-dark-3;
             display: inline-block;
+
+            @include respond(phone){
+                width: 2rem;
+            }
         }
 
         &::before,
