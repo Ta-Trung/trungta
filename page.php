@@ -59,11 +59,12 @@ get_header();
 
         <section class="section-about">
             <div class="row">
-                <div class="col-1-of-2 content">
+                <div class="col content">
                     <h1 class="heading-subpage"><?php the_title() ?></h1>
                     <?php the_content() ?>
                 </div>
-                
+            
+            <!--
                 <div class="col-1-of-2">
                     <?php the_post_thumbnail('portrait'); ?>
                     <nav class="section-about__nav">
@@ -76,6 +77,7 @@ get_header();
                         </ul>
                     </nav>
                 </div>
+            -->
             </div>
         </section>
 
