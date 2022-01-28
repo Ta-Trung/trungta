@@ -1327,12 +1327,23 @@ body {
       padding: 2rem 0;
       -webkit-clip-path: polygon(100% 0, 100% 75%, 100% 95%, 0 95%, 0 0);
       clip-path: polygon(100% 0, 100% 75%, 100% 95%, 0 95%, 0 0); } }
+  @media only screen and (max-width: 56.25em) {
+    .section-hero {
+      padding: 2rem 0;
+      -webkit-clip-path: polygon(100% 0, 100% 75%, 100% 95%, 0 95%, 0 0);
+      clip-path: polygon(100% 0, 100% 75%, 100% 95%, 0 95%, 0 0); } }
 
 .hero {
   margin: 0 auto;
   padding: 0 3.2rem;
   gap: 9.6rem;
   align-items: center; }
+  @media only screen and (max-width: 56.25em) {
+    .hero {
+      margin: 0 auto;
+      padding: 0 3.2rem;
+      gap: 9.6rem;
+      align-items: center; } }
   .hero__text-box {
     margin-top: 8.5rem; }
   .hero__banner-description {
