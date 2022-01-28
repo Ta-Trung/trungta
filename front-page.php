@@ -30,7 +30,7 @@ get_header();
                     <a href="<?php echo site_url( '/varaa-keskusteluaika' ) ?>" class="btn btn--primary btn--animated">Varaa soittoaika</a>
                 </div>
                 <div class="col-1-of-2 hero__owner-img-box">
-                    <img src=<?php echo get_theme_file_uri( './images/trung-ta-lapi-1.png' )?> alt="Trung Ta" class="hero__owner-img">
+                    <img srcset=<?php echo get_theme_file_uri( './images/trung-ta-desktop.png' )?> alt="Trung Ta" class="hero__owner-img">
                 </div>
             </div>
         </div>
@@ -130,7 +130,7 @@ get_header();
         <div class="row">
             <div class="video">
                 <figure class="video__shape">
-                    <img src=<?php echo get_theme_file_uri( 'images/Trung-Ta.jpg' ) ?> alt="trung Ta" class="video__img">
+                    <img src=<?php echo get_theme_file_uri( 'images/Trung-Ta-desktop.jpg' ) ?> alt="trung Ta" class="video__img">
                     <figcaption class="video__caption">Web-kehittäjä Trung Ta</figcaption>
                 </figure>
                 <div class="video__text">
@@ -361,7 +361,7 @@ get_header();
             </div>
             <div class="popup__right">
                 <a href="#section-hinnasto" class="popup__close">&times;</a>
-                <h2 class="heading-popup u-margin-bottom-small">Woo-verkkokauppojen tehopaketti</h2>
+                <h2 class="heading-popup--1 u-margin-bottom-small">Woo-verkkokauppojen tehopaketti</h2>
                     <?php
                         if(is_active_sidebar( 'package-three' )){
                             dynamic_sidebar( 'package-three' );
@@ -381,7 +381,7 @@ get_header();
             </div>
             <div class="popup__right">
                 <a href="#section-hinnasto" class="popup__close">&times;</a>
-                <h2 class="heading-popup u-margin-bottom-small">Muut ohjelmistokehitykset</h2>
+                <h2 class="heading-popup--1 u-margin-bottom-small">Muut ohjelmistokehitykset</h2>
                     <?php
                         if(is_active_sidebar( 'package-four' )){
                             dynamic_sidebar( 'package-four' );

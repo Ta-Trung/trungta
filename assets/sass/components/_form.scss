@@ -16,6 +16,14 @@
     display: block;
     transition: all .3s;
 
+    @include respond(phone){
+        font-size: 1.8rem;
+    }
+
+    @include respond(tab-port){
+        font-size: 1.8rem;
+    }
+
 }
 
 .wpforms-field-medium{

@@ -23,8 +23,6 @@
   gap: 9.6rem;
   align-items: center;
 
-  }
-
     &__text-box{
       margin-top: 8.5rem;
     }
@@ -144,7 +142,7 @@
                                   rgba($color-white, .9) 0%,
                                   rgba($color-white, .9) 50%,
                                   transparent 50%) ,
-                            url(./images/Trung-Ta-2.jpg);
+                            url(./images/Trung-Ta-form-desktop.jpg);
   background-size: 106%;
   background-position: -6.3rem 0rem;
   border-radius: .3rem;
@@ -156,7 +154,7 @@
     rgba($color-white, .9) 0%,
     rgba($color-white, .9) 65%,
     transparent 65%) ,
-url(./images/Trung-Ta-2.jpg);
+url(./images/Trung-Ta-form-desktop.jpg);
     background-size: cover;
 }
 
@@ -164,7 +162,7 @@ url(./images/Trung-Ta-2.jpg);
     background-image: linear-gradient(to right, 
     rgba($color-white, .9) 0%,
     rgba($color-white, .9) 100%),
-url(./images/Trung-Ta-2.jpg);
+url(./images/Trung-Ta-form-desktop.jpg);
 }
 &__form {
   width: 50%;
