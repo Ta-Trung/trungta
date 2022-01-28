@@ -16,7 +16,7 @@
             <div class="row">
                 <div class="col-1-of-4 footer__logo-box">
                         <a href="#">
-                            <img src=<?php echo get_theme_file_uri( './images/Trung-Ta-Logo.png' ) ?> alt="Trung Ta Logo" class="footer__logo">
+                            <img src=<?php echo get_theme_file_uri( './images/Trung-Ta-footer.png' ) ?> alt="Trung Ta Logo" class="footer__logo">
                         </a>
 
                     <ul class="footer__social-links">
