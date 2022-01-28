@@ -782,6 +782,103 @@ body {
 .wp-block-latest-posts__list li > a:hover, a:active {
   color: #00A6DA; }
 
+#fbuilder *, #fbuilder ::after, #fbuilder ::before {
+  box-sizing: border-box; }
+
+.ui-datepicker table {
+  width: 100%;
+  font-size: .9em;
+  border-collapse: collapse;
+  margin: 0 0 0.4em; }
+
+#fbuilder .ui-datepicker .ui-datepicker-header {
+  background: #3B7EA1;
+  border-radius: 0;
+  color: #fff;
+  text-transform: capitalize;
+  height: 70px;
+  font-size: 24px;
+  line-height: 70px;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300; }
+
+.ui-datepicker-header {
+  background: #000;
+  color: #e0e0e0;
+  font-weight: bold;
+  text-shadow: 1px -1px 0px #000;
+  filter: dropshadow(color=#000, offx=1, offy=-1);
+  line-height: 30px;
+  border-width: 0;
+  border-style: solid;
+  border-color: #111; }
+
+#fbuilder .ui-datepicker .ui-datepicker-title {
+  line-height: 70px;
+  margin: 0;
+  text-shadow: none; }
+
+.ui-datepicker .ui-datepicker-title {
+  margin: 0 2.3em;
+  line-height: 1.8em;
+  text-align: center; }
+
+.ui-datepicker-title {
+  text-align: center; }
+
+.ui-icon {
+  width: 40px;
+  height: 40px;
+  background-size: 36px;
+  cursor: pointer; }
+
+.ui-widget-header {
+  border: 1px solid #dddddd;
+  background: #e9e9e9;
+  color: #333333;
+  font-weight: bold; }
+
+.ui-datepicker {
+  height: auto;
+  margin: 5px 0;
+  font: 9pt Arial, sans-serif; }
+
+.ui-widget-content {
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  color: #333333; }
+
+.ui-widget {
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 1em; }
+
+#fbuilder .ui-datepicker th {
+  text-transform: uppercase;
+  color: #5C5C5C;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 30px; }
+
+#fbuilder .ui-datepicker-calendar th {
+  white-space: nowrap; }
+
+.ui-datepicker th {
+  text-transform: uppercase;
+  padding: 5px 0;
+  color: #666666;
+  text-align: center;
+  text-shadow: 1px 0px 0px #fff;
+  filter: dropshadow(color=#fff, offx=1, offy=0); }
+
+.ui-datepicker th {
+  text-transform: uppercase;
+  padding: 5px 0;
+  color: #666666;
+  text-align: center;
+  text-shadow: 1px 0px 0px #fff;
+  filter: dropshadow(color=#fff, offx=1, offy=0); }
+
 .video {
   width: 75%;
   margin: 0 auto;
