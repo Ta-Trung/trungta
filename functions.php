@@ -25,7 +25,7 @@ function pageBanner($args = NULL){
 		if (get_field('page_banner_background_image') AND !is_archive() AND !is_home() ) {
 			$args['photo'] = get_field('page_banner_background_image')['sizes']['pageBanner'];
 		} else {
-			$args['photo'] = get_theme_file_uri('/images/Trung-Ta-2.jpg');
+			$args['photo'] = get_theme_file_uri('/images/Trung-Ta-Banner.jpg');
 		}
 	}
 ?>
