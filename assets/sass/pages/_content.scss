@@ -2,6 +2,7 @@
 .content p{
     font-size: $default-font-size;
     color:$color-black;
+    margin-top: 1.5rem;
 
     &:not(:last-child) {
         margin-bottom: 3rem;

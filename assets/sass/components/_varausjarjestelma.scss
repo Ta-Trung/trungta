@@ -1,5 +1,33 @@
-#fbuilder *, #fbuilder ::after, #fbuilder ::before {
-    box-sizing: border-box;
+#fbuilder .ui-datepicker-inline{
+    max-width:none !important
+}
+
+#fbuilder .ui-datepicker .ui-datepicker-header {
+    background: $color-primary;
+    border-radius: 0;
+    color: $color-dark-grey;
+    text-transform: capitalize;
+    height: 7rem;
+    font-size: 2.4rem;
+    line-height: 7rem;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+
+#fbuilder .ui-datepicker table {
+    border-left: 2rem solid $color-white;
+    border-right: 2rem solid $color-white;
+    border-top: 2rem solid $color-white;
+    border-bottom: 2rem solid $color-white;
+}
+
+#fbuilder .ui-datepicker-calendar {
+    margin: 0 !important;
+}
+
+#fbuilder table.ui-datepicker-calendar {
+    table-layout: fixed;
 }
 
 .ui-datepicker table {
@@ -9,85 +37,12 @@
     margin: 0 0 0.4em;
 }
 
-#fbuilder .ui-datepicker .ui-datepicker-header {
-    background: #3B7EA1;
-    border-radius: 0;
-    color: #fff;
-    text-transform: capitalize;
-    height: 70px;
-    font-size: 24px;
-    line-height: 70px;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-}
-
-.ui-datepicker-header {
-    background: #000;
-    color: #e0e0e0;
-    font-weight: bold;
-    text-shadow: 1px -1px 0px #000;
-    filter: dropshadow(color=#000, offx=1, offy=-1);
-    line-height: 30px;
-    border-width: 0;
-    border-style: solid;
-    border-color: #111;
-}
-
-
-#fbuilder .ui-datepicker .ui-datepicker-title {
-    line-height: 70px;
-    margin: 0;
-    text-shadow: none;
-}
-
-.ui-datepicker .ui-datepicker-title {
-    margin: 0 2.3em;
-    line-height: 1.8em;
-    text-align: center;
-}
-
-.ui-datepicker-title {
-    text-align: center;
-}
-
-.ui-icon{
-    width: 40px;
-    height: 40px;
-    background-size: 36px;
-    cursor: pointer;
-}
-
-.ui-widget-header {
-    border: 1px solid #dddddd;
-    background: #e9e9e9;
-    color: #333333;
-    font-weight: bold;
-}
-
-.ui-datepicker {
-    height: auto;
-    margin: 5px 0;
-    font: 9pt Arial, sans-serif;
-}
-
-.ui-widget-content {
-    border: 1px solid #dddddd;
-    background: #ffffff;
-    color: #333333;
-}
-
-.ui-widget {
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 1em;
-}
-
 #fbuilder .ui-datepicker th {
     text-transform: uppercase;
-    color: #5C5C5C;
+    color: $color-grey;
     font-weight: 600;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 3rem;
 }
 
 #fbuilder .ui-datepicker-calendar th {
@@ -96,59 +51,304 @@
 
 .ui-datepicker th {
     text-transform: uppercase;
-    padding: 5px 0;
+    padding: .5rem 0;
     color: #666666;
     text-align: center;
-    text-shadow: 1px 0px 0px #fff;
-    filter: dropshadow(color=#fff, offx=1, offy=0);
+    text-shadow: .1rem 0rem 0rem $color-white;
+    filter: dropshadow(color=$color-white, offx=1, offy=0);
+}
+
+.ui-datepicker th {
+    padding: 0.7em 0.3em;
+    text-align: center;
+    font-weight: bold;
+    border: 0;
+}
+
+#fbuilder .ui-widget-content .ui-state-default {
+    display: inline-block;
+    padding: 0 !important;
+    background: $color-white;
+    border: 0;
+    line-height: 5rem;
+    width: 100%;
+    width: 5rem;
+    height: 5rem;
+}
+
+#fbuilder .ui-datepicker td span, #fbuilder .ui-datepicker td a {
+    text-align: center;
+    margin: 0 auto;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.ui-datepicker-calendar .ui-state-default {
+    background: #ededed;
+    background: -moz-linear-gradient(top, #ededed 0%, #dedede 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(100%,#dedede));
+    background: -webkit-linear-gradient(top, #ededed 0%,#dedede 100%);
+    background: -o-linear-gradient(top, #ededed 0%,#dedede 100%);
+    background: -ms-linear-gradient(top, #ededed 0%,#dedede 100%);
+    background: linear-gradient(top, #ededed 0%,#dedede 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#dedede',GradientType=0 );
+    -webkit-box-shadow: inset .1rem .1rem 0rem 0rem rgba(250, 250, 250, .5);
+    -moz-box-shadow: inset .1rem .1rem 0rem 0rem rgba(250, 250, 250, .5);
+    box-shadow: inset .1rem .1rem 0rem 0rem rgba(250, 250, 250, .5);
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: .1rem solid #c5c5c5;
+    background: #f6f6f6;
+    font-weight: normal;
+    color: #454545;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    color: #666666;
+    text-shadow: .1rem .1rem 0rem $color-white;
+    filter: dropshadow(color=$color-white, offx=1, offy=1);
+    box-shadow: none;
+    border: 0rem;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+    display: block;
+    padding: 0.2em;
+    text-align: right;
+    text-decoration: none;
+}
+
+#fbuilder .ui-datepicker-calendar .ui-state-active {
+    box-shadow: none;
+    background-color: $color-green;
+    display: inline-block;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    text-shadow: none;
+    color: $color-white;
+}
+
+#fbuilder .ui-datepicker-calendar tr {
+    border: none !important;
+}
+
+#fbuilder .ui-datepicker-calendar th {
+    white-space: nowrap;
+    background-color:$color-white;
 }
 
 .ui-datepicker th {
     text-transform: uppercase;
-    padding: 5px 0;
+    padding: .5rem 0;
     color: #666666;
     text-align: center;
-    text-shadow: 1px 0px 0px #fff;
-    filter: dropshadow(color=#fff, offx=1, offy=0);
+    text-shadow: .1rem 0rem 0rem $color-white;
+    filter: dropshadow(color=$color-white, offx=1, offy=0);
 }
 
+.ui-datepicker th {
+    padding: 0.7em 0.3em;
+    text-align: center;
+    font-weight: bold;
+    border: 0;
+}
+
+#fbuilder .ui-datepicker td {
+    padding: 0;
+    text-align: center;
+    height: 5rem;
+    font-size: 2rem;
+    width: 14.28%;
+    position: relative;
+    border: none !important;
+}
+
+#fbuilder .slots {
+    border: none;
+    box-shadow: none;
+    background-color: $color-white;
+    font-family: "Montserrat", sans-serif;
+    padding: 3rem;
+}
+
+#fbuilder .slots > span {
+    font-size: 2.4rem;
+    display: block;
+    text-align: center;
+    height: 7rem;
+    line-height: 7rem;
+    border-top: .2rem solid #ccc;
+    border-bottom: .2rem solid #ccc;
+}
+
+#fbuilder .slots .availableslot a {
+    background-color: $color-primary;
+    font-weight: 400;
+    font-size:1.2rem;
+    color: $color-dark-grey;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    text-align: center;
+    border: .1rem solid $color-primary !important;
+}
+
+#fbuilder .slots div a {
+    background: #ededed;
+    box-shadow: none;
+    display: inline-block;
+    padding: .4rem;
+}
+
+#fbuilder .slots .choosen a {
+    background-color: $color-green;
+    color: $color-dark-grey !important;
+    border: none !important;
+    width: 100%;
+    font-weight: 400;
+    font-size:1.2rem;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border: .1rem solid $color-green !important;
+}
+
+#fbuilder .slots div.htmlUsed a {
+    color: #ccc;
+}
+
+#fbuilder .slots div a {
+    background: #ededed;
+    box-shadow: none;
+    display: inline-block;
+    padding: .4rem;
+}
+
+#fbuilder .fields label {
+    color: $color-dark-grey;
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    margin-top: 3rem;
+    display: block;
+    font-weight: 400;
+}
+
+#fbuilder label {
+    margin-right: 1rem;
+}
+
+#fbuilder .dfield input {
+    background-color: transparent;
+    border: none;
+    border-bottom: .1rem solid $color-primary;
+    width: 100% !important;
+    color: #000;
+    font-size: 1.6rem;
+}
+
+#fbuilder .pbSubmit {
+    background-color: $color-green !important;
+    color: $color-white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    width: 28rem;
+    line-height: 3.8rem;
+    text-align: center;
+    -webkit-appearance: none;
+    border: .1rem solid $color-green;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0 0rem 0rem 0rem;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    border-top: 1rem solid $color-white;
+    border-right: 3rem solid $color-white;
+    border-left: 3rem solid $color-white;
+    border-bottom: 3rem solid $color-white;
+    width: 100%;
+}¨
+
+#fbuilder .ahb_list .ahb_list_time .d {
+    width: 10rem;
+    display: inline-block;
+}
+
+#fbuilder .ahb_list {
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background-color: $color-white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+}
+
+#fbuilder .ahb_list .cancel {
+    float: right;
+    text-transform: uppercase;
+    line-height: 2rem;
+    font-size: 2rem;
+    color: $color-grey;
+}
+
+#fbuilder .medium {
+    width: 50% !important;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+input[type="text"], input[type="search"] {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+#fbuilder span.uh {
+    display: block;
+    font-size: 80%;
+    clear: both;
+}
+
+.dfield {
+    position: relative;
+}
+
+#fbuilder *, #fbuilder ::after, #fbuilder ::before {
+    box-sizing: border-box;
+}
+
+.clearer {
+    clear: both;
+}
+
+
+.ahbfield_service{
+    clear:both;
+    width:35%;
+    height:3rem;
+    overflow: hidden;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
 
 .cpp_form{
+    margin-top: -8.8rem;
 
-}
-
-.cpp_form input{
-
-}
-
-.cp_avoid_hidden{
-
-}
-
-.pbreak{
-
-}
-
-.fields {
-
-}
-
-.cff-checkbox-field{
-
-}
-
-.dfield{
-
-}
-
-.one_column{
-
-}
-
-.captcha{
-
-}
-
-.pbSubmit{
-
+    @include respond(phone){
+        margin-top: -2.8rem;
+    }
 }
