@@ -1422,7 +1422,7 @@ input[type="text"], input[type="search"] {
 
 .about-header {
   height: 28rem;
-  background-position: 0 1.3rem;
+  background-position: 0 0rem;
   background-attachment: fixed;
   border-bottom: 0.1rem #fff solid;
   top: 0;
