@@ -672,6 +672,62 @@ body {
   .page-banner__intro p {
     margin: 0; }
 
+.sisallysluettelo-heading, .paketti-1, .paketti-2, .paketti-3, .paketti-4, .paketti-5 {
+  font-size: 2rem; }
+
+.sisallysluettelo-palvelut {
+  background-color: #f7f7f7;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em; }
+
+.sisallysluettelo-palvelut > ol {
+  margin-left: 1.5em !important; }
+
+.sisallysluettelo-palvelut ol {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.sisallysluettelo-palvelut ol {
+  color: #0083AB;
+  line-height: 1.9em; }
+
+.sisallysluettelo-palvelut ol {
+  font-size: 1.5rem; }
+
+.sisallysluettelo-palvelut li {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.sisallysluettelo-palvelut li > a:hover {
+  color: #0083AB; }
+
+.sisallysluettelo-palvelut li > a {
+  color: #777;
+  text-decoration: none;
+  cursor: pointer; }
+
+.sisallysluettelo-palvelut li > a {
+  font-weight: normal; }
+
+.paketti-1-ul, .paketti-2-ul, .paketti-3-ul {
+  list-style-type: disc;
+  margin-top: 0; }
+
+.paketti-1-ul, .paketti-2-ul, .paketti-3-ul {
+  color: #2B2B2B;
+  line-height: 1.7em; }
+
+.paketti-1-ul, .paketti-2-ul, .paketti-3-ul {
+  font-size: 1.5rem; }
+
+.paketti-1-ul, .paketti-2-ul, .paketti-3-ul {
+  margin-left: 1.5em !important; }
+
+.paketti-5-paragraph {
+  margin-bottom: 1.5rem; }
+
 .popup {
   height: 100vh;
   width: 100%;
@@ -1421,14 +1477,15 @@ input[type="text"], input[type="search"] {
     padding-bottom: 20px; }
 
 .about-header {
-  height: 28rem;
-  background-position: 0 0rem;
+  height: 30rem;
+  background-position: 0 -76rem;
   background-attachment: fixed;
   border-bottom: 0.1rem #fff solid;
   top: 0;
   bottom: 0;
   left: 0;
-  right: 0; }
+  right: 0;
+  opacity: 0.33; }
   .about-header__content {
     margin: -20rem 0 25rem 0; }
 

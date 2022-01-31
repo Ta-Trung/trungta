@@ -31,14 +31,15 @@
   
   
   .about-header{
-    height: 28rem;
-    background-position: 0 0rem;
+    height: 30rem;
+    background-position: 0 -76rem;
     background-attachment: fixed;
     border-bottom: 0.1rem #fff solid;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    opacity: 0.33;
     
     &__content{
       margin: -20rem 0 25rem 0;
