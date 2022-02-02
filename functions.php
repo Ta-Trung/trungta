@@ -244,7 +244,6 @@ function trungta_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'trungta_scripts' );
 
-
 /**
  * Implement the Custom Header feature.
  */
