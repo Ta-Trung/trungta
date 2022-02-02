@@ -246,6 +246,16 @@ add_action( 'wp_enqueue_scripts', 'trungta_scripts' );
 
 
 /**
+ * Exclude Node_Module folder while exporting WordPress
+ */
+add_filter( 'ai1wm_exlude_content_from_export', 'ignoreCertainFiles');
+
+function ignoreCertainFiles($exclude_filters){
+	$exclude_filters[] = 'themes/trungta/node_modules';
+	return $exclude_filters;
+}
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
