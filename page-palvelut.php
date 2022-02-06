@@ -60,7 +60,7 @@ get_header();
         <section class="section-about">
             <div class="row">
                 <div class="col content">
-                    <h1 class="heading-subpage"><?php the_title() ?></h1>
+                    <h1 class="heading-subpage-second"><?php the_title() ?></h1>
                     <?php the_content() ?>
                 </div>
             
