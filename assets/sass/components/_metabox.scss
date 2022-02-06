@@ -1,64 +1,64 @@
 .metabox {
-    background-color: $color-beige;
-    border-radius: .3rem;
-    padding: 1rem 1.5rem;
-    display: inline-block;
-    margin-bottom: 3rem;
-    box-shadow: .2rem .2rem .1rem rgba(0, 0, 0, 0.07);
-  
-    &--position-up {
-      top: 0;
-      transform: translateY(-293%);
+  background-color: $color-beige;
+  border-radius: 0.3rem;
+  padding: 1rem 1.5rem;
+  display: inline-block;
+  margin-bottom: 3rem;
+  box-shadow: 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.07);
 
-      @include respond(phone){
-        transform: translateY(-182%);
-      }
+  &--position-up {
+    top: 0;
+    transform: translateY(-360%);
 
-      @include respond(tab-port){
-        transform: translateY(-183%);
-      }
-    }
-  
-    &--with-home-link {
-      padding: 0;
-    }
-  
-    &__main {
-      color:#000;
-      padding: 1rem 1.5rem 1rem 1.1rem;
+    @include respond(phone) {
+      transform: translateY(-427%) !important;
     }
 
-    &__main>a{
-      color:#000 !important;
-    }
-
-    p {
-      margin: 0;
-      font-size: 0.9rem;
-      color: $color-black;
-    }
-  
-    a {
-      color: $color-black;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    a:focus {
-      color:$color-primary;
-    }
-  
-    & &__blog-home-link {
-      background-color: $color-primary;
-      color: $color-black;
-      display: inline-block;
-      padding: 1rem 1.5rem;
-      border-radius: .3rem 0 0 .3rem;
-      font-weight: normal;
-    }
-  
-    & &__blog-home-link:hover {
-      text-decoration: none;
-      background-color: $color-primary;
+    @include respond(tab-port) {
+      transform: translateY(-338%);
     }
   }
+
+  &--with-home-link {
+    padding: 0;
+  }
+
+  &__main {
+    color: #000;
+    padding: 1rem 1.5rem 1rem 1.1rem;
+  }
+
+  &__main > a {
+    color: #000 !important;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: $color-black;
+  }
+
+  a {
+    color: $color-black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  a:focus {
+    color: $color-primary;
+  }
+
+  & &__blog-home-link {
+    background-color: $color-primary;
+    color: $color-black;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    border-radius: 0.3rem 0 0 0.3rem;
+    font-weight: 600;
+  }
+
+  & &__blog-home-link:hover {
+    text-decoration: none;
+    background-color: $color-primary;
+  }
+}

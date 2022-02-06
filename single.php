@@ -15,7 +15,11 @@ get_header();
 		<?php
 		while ( have_posts() ) {
 			the_post();
-			pageBanner();
+			pageBanner(array(
+				'title' => null,
+				'subtitle'	=> null,
+				'photo'	=> null
+			));
 			?>
 		
 		<!--SINGLES POSTS-->
