@@ -1428,11 +1428,11 @@ input[type="text"], input[type="search"] {
 
 .header {
   z-index: 3;
-  position: absolute;
   top: 0;
   left: 3rem;
   right: 0;
-  padding: 2rem 0; }
+  padding: 0rem 0;
+  background-color: #181818; }
   @media only screen and (max-width: 37.5em) {
     .header {
       top: 2.3rem; } }
@@ -1440,6 +1440,22 @@ input[type="text"], input[type="search"] {
     height: 10rem; }
     @media only screen and (max-width: 37.5em) {
       .header__logo {
+        height: 6.4rem; } }
+
+.header-page {
+  z-index: 3;
+  top: 0;
+  left: 3rem;
+  right: 0;
+  padding: 0rem 0;
+  background-color: #fff; }
+  @media only screen and (max-width: 37.5em) {
+    .header-page {
+      top: 2.3rem; } }
+  .header-page__logo {
+    height: 10rem; }
+    @media only screen and (max-width: 37.5em) {
+      .header-page__logo {
         height: 6.4rem; } }
 
 .navigation__checkbox {
@@ -1882,7 +1898,7 @@ input[type="text"], input[type="search"] {
   .section-ajankohtaista__viva {
     border-bottom: 0.2rem solid #181818;
     position: relative;
-    height: .5rem;
+    height: 0.5rem;
     width: 25%;
     display: block;
     margin-left: auto;
@@ -1894,9 +1910,9 @@ input[type="text"], input[type="search"] {
     line-height: 1.5;
     margin-bottom: 10rem; }
   .section-ajankohtaista__content {
-    padding: .3rem; }
+    padding: 0.3rem; }
   .section-ajankohtaista__content a {
-    padding: .3rem;
+    padding: 0.3rem;
     color: #181818 !important;
     text-decoration: none; }
   .section-ajankohtaista__paivamaara {
@@ -1905,7 +1921,7 @@ input[type="text"], input[type="search"] {
     text-transform: uppercase; }
   .section-ajankohtaista__link {
     display: block;
-    margin-top: .2rem;
+    margin-top: 0.2rem;
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
     text-decoration: none; }
@@ -1949,7 +1965,7 @@ input[type="text"], input[type="search"] {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(./images/Trung-Ta-form-desktop.jpg);
   background-size: 106%;
   background-position: -6.3rem 0rem;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   box-shadow: 0 1.5rem 4rem rgba(24, 24, 24, 0.2);
   height: 60rem; }
   @media only screen and (max-width: 75em) {

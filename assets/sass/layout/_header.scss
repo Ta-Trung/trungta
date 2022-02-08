@@ -1,20 +1,41 @@
-.header{
+.header {
   z-index: 3;
-  position: absolute;
   top: 0;
   left: 3rem;
   right: 0;
-  padding: 2rem 0;
+  padding: 0rem 0;
+  background-color: $color-black;
 
-  @include respond(phone){
+  @include respond(phone) {
     top: 2.3rem;
   }
-    
-    &__logo{
-      height: 10rem;
 
-      @include respond(phone){
-        height: 6.4rem;
-      }
+  &__logo {
+    height: 10rem;
+
+    @include respond(phone) {
+      height: 6.4rem;
     }
   }
+}
+
+.header-page {
+  z-index: 3;
+  top: 0;
+  left: 3rem;
+  right: 0;
+  padding: 0rem 0;
+  background-color: $color-white;
+
+  @include respond(phone) {
+    top: 2.3rem;
+  }
+
+  &__logo {
+    height: 10rem;
+
+    @include respond(phone) {
+      height: 6.4rem;
+    }
+  }
+}

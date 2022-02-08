@@ -52,8 +52,8 @@
     </div>
 
     <!--HEADER-->
-    <header class="header">
-        <a href="<?php echo site_url() ?>"><img class="header__logo" src=<?php echo get_theme_file_uri( './images/Trung-Ta-Logo-desktop.png' ) ?> alt="Trung Ta Logo"></a>
+    <header class="header-page">
+        <a href="<?php echo site_url() ?>"><img class="header-page__logo" src=<?php echo get_theme_file_uri( './images/trung-ta-logo-black.png' ) ?> alt="Trung Ta Logo"></a>
     </header>
 
 
