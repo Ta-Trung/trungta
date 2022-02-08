@@ -1,106 +1,103 @@
-.section-hero{
-      background-color: $color-black;
-      padding: 5.8rem 0 9.6rem 0;
-      -webkit-clip-path: polygon(100% 0, 100% 75%, 67% 85%, 0 75%, 0 0);
-      clip-path: polygon(100% 0, 100% 75%, 67% 85%, 0 75%, 0 0);
+.section-hero {
+  background-color: $color-black;
+  padding: 5.8rem 0 9.6rem 0;
+  -webkit-clip-path: polygon(100% 0, 100% 75%, 67% 85%, 0 75%, 0 0);
+  clip-path: polygon(100% 0, 100% 75%, 67% 85%, 0 75%, 0 0);
 
-      @include respond(phone) {
-        padding: 2rem 0;
-        -webkit-clip-path: polygon(100% 0, 100% 75%, 100% 95%, 0 95%, 0 0);
-        clip-path: polygon(100% 0, 100% 75%, 100% 95%, 0 95%, 0 0);
-    }
-
-    @include respond(tab-port) {
-      padding: 2rem 0;
-      -webkit-clip-path: polygon(100% 0, 100% 75%, 100% 95%, 0 95%, 0 0);
-      clip-path: polygon(100% 0, 100% 75%, 100% 95%, 0 95%, 0 0);
-    }
+  @include respond(phone) {
+    padding: 2rem 0;
+    -webkit-clip-path: polygon(100% 0, 100% 75%, 100% 95%, 0 95%, 0 0);
+    clip-path: polygon(100% 0, 100% 75%, 100% 95%, 0 95%, 0 0);
   }
-  
-.hero{
+
+  @include respond(tab-port) {
+    padding: 2rem 0;
+    -webkit-clip-path: polygon(100% 0, 100% 75%, 100% 95%, 0 95%, 0 0);
+    clip-path: polygon(100% 0, 100% 75%, 100% 95%, 0 95%, 0 0);
+  }
+}
+
+.hero {
   margin: 0 auto;
   padding: 0 3.2rem;
   gap: 9.6rem;
   align-items: center;
 
-    &__text-box{
-      margin-top: 8.5rem;
-    }
-
-    &__banner-description{
-      font-size: 2rem;
-      line-height: 1.6;
-      margin-bottom: 4.8rem;
-      color: $color-white;
-  }
-    
-    &__owner-img{
-        width: 100%;
+  &__text-box {
+    margin-top: 8.5rem;
   }
 
+  &__banner-description {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+    color: $color-white;
+  }
+
+  &__owner-img {
+    width: 100%;
+  }
 }
 
-.section-ajankohtaista{
-  background-color:$color-primary;
-  
+.section-ajankohtaista {
+  background-color: $color-primary;
 
-  &__heading{
+  &__heading {
     margin-top: 1.5rem;
   }
-  &__viva{
-    border-bottom: .2rem solid $color-black;
+  &__viva {
+    border-bottom: 0.2rem solid $color-black;
     position: relative;
-    height: .5rem;
+    height: 0.5rem;
     width: 25%;
-    display:block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  &__item{
+  &__item {
     position: relative;
     background-color: $color-white;
     padding: 4rem 5rem;
     line-height: 1.5;
-    margin-bottom:10rem;
+    margin-bottom: 10rem;
   }
 
-  &__content{
-    padding: .3rem;
+  &__content {
+    padding: 0.3rem;
   }
 
-  &__content a{
-    padding: .3rem;
-    color:$color-black !important;
+  &__content a {
+    padding: 0.3rem;
+    color: $color-black !important;
     text-decoration: none;
   }
 
-  &__paivamaara{
+  &__paivamaara {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
   }
 
-  &__link{
+  &__link {
     display: block;
-    margin-top: .2rem;
+    margin-top: 0.2rem;
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
   }
 }
 
-
 .section-lupaus {
+  padding: 20rem 0;
+  margin-top: -10rem;
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
+
+  @include respond(phone) {
     padding: 20rem 0;
-    margin-top: -10rem;
-
-    @include respond(tab-port) {
-      padding: 10rem 0;
-    }
-
-    @include respond(phone) {
-      padding: 20rem 0;
   }
 }
 
@@ -122,7 +119,7 @@
     padding: 10rem 0;
   }
 
-  &__text{
+  &__text {
     font-size: 1.4rem;
     font-style: italic;
   }
@@ -130,7 +127,11 @@
 
 .section-varaus {
   padding: 15rem 0;
-  background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-light,
+    $color-primary-dark
+  );
 
   @include respond(tab-port) {
     padding: 10rem 0;
@@ -138,42 +139,48 @@
 }
 
 .varaus {
-  background-image: linear-gradient(105deg, 
-                                  rgba($color-white, .9) 0%,
-                                  rgba($color-white, .9) 50%,
-                                  transparent 50%) ,
-                            url(./images/Trung-Ta-form-desktop.jpg);
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-white, 0.9) 0%,
+      rgba($color-white, 0.9) 50%,
+      transparent 50%
+    ),
+    url(./images/Trung-Ta-form-desktop.jpg);
   background-size: 106%;
   background-position: -6.3rem 0rem;
-  border-radius: .3rem;
-  box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+  border-radius: 0.3rem;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
   height: 60rem;
 
   @include respond(tab-land) {
-    background-image: linear-gradient(105deg, 
-    rgba($color-white, .9) 0%,
-    rgba($color-white, .9) 65%,
-    transparent 65%) ,
-url(./images/Trung-Ta-form-desktop.jpg);
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-white, 0.9) 0%,
+        rgba($color-white, 0.9) 65%,
+        transparent 65%
+      ),
+      url(./images/Trung-Ta-form-desktop.jpg);
     background-size: cover;
-}
-
-@include respond(tab-port) {
-    background-image: linear-gradient(to right, 
-    rgba($color-white, .9) 0%,
-    rgba($color-white, .9) 100%),
-url(./images/Trung-Ta-form-desktop.jpg);
-}
-&__form {
-  width: 50%;
-  padding: 6rem;
-
-  @include respond(tab-land) {
-      width: 65%;
   }
 
   @include respond(tab-port) {
-      width: 100%;
+    background-image: linear-gradient(
+        to right,
+        rgba($color-white, 0.9) 0%,
+        rgba($color-white, 0.9) 100%
+      ),
+      url(./images/Trung-Ta-form-desktop.jpg);
   }
-}
+  &__form {
+    width: 50%;
+    padding: 6rem;
+
+    @include respond(tab-land) {
+      width: 65%;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+  }
 }

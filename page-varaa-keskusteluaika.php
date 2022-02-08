@@ -12,7 +12,13 @@
  * @package trungta
  */
 
-get_header();
+if(is_page()) {
+    get_header('page');
+   }
+   else {
+    get_header();
+   }
+    wp_head();
 ?>
 
 	<main>
