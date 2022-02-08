@@ -23,7 +23,7 @@ pageBanner(array(
 						<h1 class="search-result__page-title">
 							<?php
 							/* translators: %s: search query. */
-							printf( esc_html__( 'Search Results for: %s', 'trungta' ), '<span>' . get_search_query() . '</span>' );
+							printf( esc_html__( 'Antamallasi avainsanalla "%s" löytyy seuraavat tulokset', 'trungta' ), '<span>' . get_search_query() . '</span>' );
 							?>
 						</h1>
 					</header><!-- .page-header -->
