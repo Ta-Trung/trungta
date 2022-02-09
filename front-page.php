@@ -392,7 +392,8 @@ get_header();
             </div>
         </div>
     </div>
-
+     <!--SCROLL TO TOP BUTTON-->
+     <button id="totopBtn" onclick="topFunction()" title="Palaa sivun alkuun">Ylös</button>
 </main>
 
 <?php
