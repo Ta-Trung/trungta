@@ -234,6 +234,9 @@ add_action( 'widgets_init', 'trungta_widgets_init' );
  * Enqueue scripts and styles.
  */
 function trungta_scripts() {
+	wp_enqueue_script( 'button-js', get_theme_file_uri( '/js/button.js'), array('jquery'),'1.0',true);
+	wp_enqueue_script( 'customizer-js', get_theme_file_uri( '/js/customizer.js'), array('jquery'),'1.0',true);
+	wp_enqueue_script( 'navigation-js', get_theme_file_uri( '/js/navigation.js'), array('jquery'),'1.0',true);
 	wp_enqueue_style( 'trungta-main-style', get_theme_file_uri( '/assets/css/main.css' ));
 	wp_enqueue_style( 'font-awesome', get_theme_file_uri( '/assets/css/all.css' ));
 	wp_enqueue_style( 'Google-fonts', '//fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');

@@ -270,7 +270,7 @@ body {
   padding: 1.5rem 4rem;
   display: inline-block;
   border-radius: 10rem;
-  transition: all .2s;
+  transition: all 0.2s;
   position: relative;
   font-size: 1.6rem;
   font-weight: 600;
@@ -307,10 +307,10 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all .4s; }
+  transition: all 0.4s; }
 
 .btn--animated {
-  animation: moveInBottom .5s ease-out .75s;
+  animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards; }
 
 .btn--white {
@@ -338,7 +338,7 @@ body {
   text-decoration: none;
   border-bottom: 1px solid #00A6DA;
   padding: 3px;
-  transition: all .2s; }
+  transition: all 0.2s; }
 
 .btn-text:hover {
   background-color: #00A6DA;
@@ -356,7 +356,7 @@ body {
   padding: 1rem 2rem;
   display: inline-block;
   border-radius: 5rem;
-  transition: all .2s;
+  transition: all 0.2s;
   position: relative;
   font-size: 1rem;
   font-weight: 600;
@@ -387,7 +387,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all .4s; }
+  transition: all 0.4s; }
 
 .btnblog--primary {
   background-color: #00A6DA;
@@ -395,6 +395,38 @@ body {
 
 .btnblog--primary::after {
   background-color: #00A6DA; }
+
+#totopBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 2rem;
+  /* Place the button at the bottom of the page */
+  right: 3rem;
+  /* Place the button 30px from the right */
+  z-index: 9999999;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #00A6DA;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 1.5rem;
+  /* Some padding */
+  border-radius: 1rem;
+  /* Rounded corners */
+  font-size: 1.8rem;
+  /* Increase font size */ }
+
+#totopBtn:hover {
+  background-color: #777;
+  /* Add a dark-grey background on hover */ }
 
 .card {
   perspective: 150rem;
