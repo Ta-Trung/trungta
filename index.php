@@ -12,7 +12,14 @@
  * @package trungta
  */
 
-get_header();
+if(is_home()) {
+    get_header('page');
+   }
+   else {
+    get_header();
+   }
+    wp_head();
+
 pageBanner(array(
     'title' => 'Tervetuloa blogkirjoitukseeni',
     'subtitle'  => 'Täällä saat vinkkiä ja ohjeita nettisivun toteutuksessa',
