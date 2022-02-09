@@ -179,7 +179,7 @@
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
   background-color: $color-primary; /* Set a background color */
-  color: white; /* Text color */
+  color: $color-white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 1.5rem; /* Some padding */
   border-radius: 1rem; /* Rounded corners */

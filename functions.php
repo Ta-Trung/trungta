@@ -236,6 +236,7 @@ add_action( 'widgets_init', 'trungta_widgets_init' );
 function trungta_scripts() {
 	wp_enqueue_script( 'button-js', get_theme_file_uri( '/js/button.js'), array('jquery'),'1.0',true);
 	wp_enqueue_script( 'customizer-js', get_theme_file_uri( '/js/customizer.js'), array('jquery'),'1.0',true);
+	wp_enqueue_script( 'main-js', get_theme_file_uri( '/js/main.js'), array('jquery'),'1.0',true);
 	wp_enqueue_script( 'navigation-js', get_theme_file_uri( '/js/navigation.js'), array('jquery'),'1.0',true);
 	wp_enqueue_style( 'trungta-main-style', get_theme_file_uri( '/assets/css/main.css' ));
 	wp_enqueue_style( 'font-awesome', get_theme_file_uri( '/assets/css/all.css' ));
@@ -283,3 +284,13 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+//Tell Wordpress to load jQuery via Google library
+function trungta_modify_jquery(){
+	if(is_admin()){
+		wp_deregister_script( 'jquery' );
+		wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', false,'3.3.1' );
+		wp_enqueue_script( 'jquery');
+	}
+}
+add_action('init','trungta_modify_jquery');
