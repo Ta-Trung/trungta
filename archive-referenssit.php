@@ -12,7 +12,14 @@
  * @package trungta
  */
 
-get_header();
+if(is_archive()) {
+    get_header('page');
+   }
+   else {
+    get_header();
+   }
+    wp_head();
+
 pageBanner(array(
     'title' => "Referenssit",
     'subtitle'  => "Teen nettisivuja, verkkokauppoja ja sovelluksia intohimona",
