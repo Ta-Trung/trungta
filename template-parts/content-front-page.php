@@ -31,7 +31,7 @@
     </section>
 
        <!--AJANKOHTAISTA-->
-       <!--<section class="section-ajankohtaista">
+       <section class="section-ajankohtaista">
         <div class="u-center-text u-margin-bottom-big">
             <div class="row">
                 <div class="col">
@@ -62,7 +62,7 @@
                 <?php } wp_reset_postdata();
             ?>
         </div>
-    </section>-->
+    </section>
 
     <!--Lupaus-->
     <section class="section-lupaus">
