@@ -6,8 +6,13 @@
  *
  * @package trungta
  */
-
-get_header();
+if(is_single()) {
+    get_header('page');
+   }
+   else {
+    get_header();
+   }
+    wp_head();
 ?>
 
 	<main id="primary" class="site-main">
@@ -33,11 +38,20 @@ get_header();
 				</div>
 			</div>
             <div class="row">
-                <div class="col section-single__content">
+                <div class="col-2-of-3 section-single__content">
+					<div><?php the_post_thumbnail('single-post-thumbnail') ?></div>
+					<h2 class="heading-secondary section-single__header"><?php the_title() ?></h2>
                     <?php the_content() ?>
                 </div>
+
+				<div class="col-1-of-3 section-single__sidebar">
+				<?php
+				get_sidebar();
+				?>
+				</div>
 		</section>
 	</main><!-- #main -->
 
 <?php }
+
 get_footer();

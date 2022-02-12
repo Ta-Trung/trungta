@@ -11,11 +11,11 @@
     transform: translateY(-360%);
 
     @include respond(phone) {
-      transform: translateY(-427%) !important;
+      transform: translateY(-234%) !important;
     }
 
     @include respond(tab-port) {
-      transform: translateY(-338%);
+      transform: translateY(-255%);
     }
   }
 

@@ -628,44 +628,62 @@ body {
 .wpforms-field-container:not(:last-child) {
   margin-bottom: 2rem; }
 
-.wpforms-field-label {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-top: 2.5rem;
-  display: block;
-  transition: all .3s; }
+div.wpforms-container-full .wpforms-form input.wpforms-field-medium,
+div.wpforms-container-full .wpforms-form select.wpforms-field-medium,
+div.wpforms-container-full
+.wpforms-form
+.wpforms-field-row.wpforms-field-medium {
+  max-width: 100% !important; }
+
+div.wpforms-container-full .wpforms-form .wpforms-field-label {
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+  margin-top: 1.5rem !important;
+  display: block !important;
+  transition: all 0.3s; }
   @media only screen and (max-width: 37.5em) {
-    .wpforms-field-label {
-      font-size: 1.6rem; } }
+    div.wpforms-container-full .wpforms-form .wpforms-field-label {
+      font-size: 1.6rem !important; } }
   @media only screen and (max-width: 56.25em) {
-    .wpforms-field-label {
-      font-size: 1.8rem; } }
+    div.wpforms-container-full .wpforms-form .wpforms-field-label {
+      font-size: 1.8rem !important; } }
 
-.wpforms-field-medium {
-  font-size: 1.5rem;
+#wpforms-56-field_0,
+#wpforms-56-field_1,
+#wpforms-56-field_2 {
+  font-size: 1.5rem !important;
   font-family: inherit;
-  color: inherit;
-  padding: 1.5rem 2rem;
-  border-radius: 2px;
-  background-color: rbga(#fff, 0.5);
-  border: none;
-  border-bottom: 3px solid transparent;
-  width: 90%;
-  display: block;
-  transition: all .3s; }
+  color: inherit !important;
+  padding: 1.5rem 2rem !important;
+  border-radius: 2px !important;
+  background-color: rbga(#fff, 0.5) !important;
+  border: none !important;
+  border-bottom: 3px solid transparent !important;
+  width: 90% !important;
+  display: block !important;
+  transition: all 0.3s;
+  height: 5rem !important; }
 
-.wpforms-field-medium:focus {
-  outline: none;
-  box-shadow: 0 1rem 2rem rgba(24, 24, 24, 0.1);
-  border-bottom: 3px solid #00A6DA; }
+#wpforms-56-field_0:focus,
+#wpforms-56-field_1:focus,
+#wpforms-56-field_2:focus {
+  outline: none !important;
+  box-shadow: 0 1rem 2rem rgba(24, 24, 24, 0.1) !important;
+  border-bottom: 3px solid #00A6DA !important; }
 
-.wpforms-field-medium:focus:invalid {
-  border-bottom: 3px solid #0083AB; }
+#wpforms-56-field_0:focus:invalid,
+#wpforms-56-field_1:focus:invalid,
+#wpforms-56-field_2:focus:invalid {
+  border-bottom: 3px solid #0083AB !important; }
 
-.wpforms-field-medium::-webkit-input-placeholder {
-  color: #999; }
+#wpforms-56-field_0::-webkit-input-placeholder,
+#wpforms-56-field_1::-webkit-input-placeholder,
+#wpforms-56-field_2::-webkit-input-placeholder {
+  color: #999 !important; }
 
-.wpforms-submit, .wpforms-submit:link, .wpforms-submit:visited {
+.wpforms-submit,
+.wpforms-submit:link,
+.wpforms-submit:visited {
   background-color: #00A6DA !important;
   color: #fff !important;
   text-transform: uppercase !important;
@@ -673,7 +691,7 @@ body {
   padding: 1.5rem 4rem !important;
   display: inline-block !important;
   border-radius: 10rem !important;
-  transition: all .2s !important;
+  transition: all 0.2s !important;
   position: relative !important;
   font-size: 1.6rem !important;
   font-weight: 600 !important;
@@ -688,14 +706,21 @@ body {
   transform: scaleX(1.4) scaleY(1.6) !important;
   opacity: 0 !important; }
 
-.wpforms-submit:active, .wpforms-submit:focus {
+.wpforms-submit:active,
+.wpforms-submit:focus {
   outline: none !important;
   transform: translateY(-1px) !important;
   box-shadow: 0 0.5rem 1rem rgba(119, 119, 119, 0.2) !important; }
 
-div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
-  height: 12rem;
+#wpforms-56-field_2 {
+  height: 12rem !important;
   width: 68.5rem; }
+
+.form-56-header {
+  margin-bottom: 1.5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .form-56-header {
+      margin-left: 3.5rem; } }
 
 .metabox {
   background-color: #f5f5dc;
@@ -709,10 +734,10 @@ div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
     transform: translateY(-360%); }
     @media only screen and (max-width: 37.5em) {
       .metabox--position-up {
-        transform: translateY(-427%) !important; } }
+        transform: translateY(-234%) !important; } }
     @media only screen and (max-width: 56.25em) {
       .metabox--position-up {
-        transform: translateY(-338%); } }
+        transform: translateY(-255%); } }
   .metabox--with-home-link {
     padding: 0; }
   .metabox__main {
@@ -971,16 +996,15 @@ div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
     margin: 1rem 0 3rem; }
 
 .wp-block-latest-posts__list {
-  background-color: #181818;
   padding: 0 0;
   font-size: 1.4rem;
   color: #f7f7f7; }
   @media only screen and (max-width: 56.25em) {
     .wp-block-latest-posts__list {
-      margin-top: .5rem; } }
+      margin-top: 0.5rem; } }
   @media only screen and (max-width: 37.5em) {
     .wp-block-latest-posts__list {
-      margin-top: .5rem; } }
+      margin-top: 0.5rem; } }
 
 .wp-block-latest-posts__list {
   list-style: none;
@@ -988,14 +1012,35 @@ div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
   flex-direction: column;
   gap: 1.4rem; }
 
-.wp-block-latest-posts__list li > a:link, a:visited {
+.wp-block-latest-posts__list li > a:link,
+.wp-block-latest-posts__list li > a:visited {
   text-decoration: none;
   font-size: 1.6rem;
-  color: #fff;
+  color: #777 !important;
   transition: all 0.3s; }
 
-.wp-block-latest-posts__list li > a:hover, a:active {
-  color: #00A6DA; }
+.wp-block-latest-posts__list li > a:hover,
+.wp-block-latest-posts__list li > a:active {
+  color: #00A6DA !important; }
+
+.wp-block-group {
+  margin: -25rem 0 35rem 0;
+  text-align: center; }
+  @media only screen and (max-width: 37.5em) {
+    .wp-block-group {
+      margin: -2rem 0 13rem 0; } }
+  @media only screen and (max-width: 56.25em) {
+    .wp-block-group {
+      margin: -2rem 0 35rem 0; } }
+  .wp-block-group__inner-container p {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem; }
+
+.section-single__content {
+  margin-top: -17.5rem !important; }
+
+.section-single__content p:not(:last-child) {
+  margin-bottom: 1.5rem !important; }
 
 .pyyda-rohkeasti-tarjoukset {
   font-size: 2rem; }
@@ -1418,6 +1463,22 @@ input[type="text"], input[type="search"] {
     transition: all 0.3s; }
   .footer__link:hover, .footer__link:active {
     color: #00A6DA; }
+
+.footer-one li > a:link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #fff !important;
+  transition: all 0.3s; }
+
+.footer-one li > a:link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #777;
+  transition: all 0.3s; }
+
+.footer-one li > a:hover,
+.footer-one li > a:active {
+  color: #00A6DA; }
 
 .row {
   max-width: 114rem;
@@ -1994,7 +2055,7 @@ input[type="text"], input[type="search"] {
     .section-varaus {
       padding: 10rem 0; } }
 
-.varaus {
+#wpforms-56 {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(./images/Trung-Ta-form-desktop.jpg);
   background-size: 106%;
   background-position: -6.3rem 0rem;
@@ -2002,18 +2063,19 @@ input[type="text"], input[type="search"] {
   box-shadow: 0 1.5rem 4rem rgba(24, 24, 24, 0.2);
   height: 60rem; }
   @media only screen and (max-width: 75em) {
-    .varaus {
+    #wpforms-56 {
       background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(./images/Trung-Ta-form-desktop.jpg);
       background-size: cover; } }
   @media only screen and (max-width: 56.25em) {
-    .varaus {
+    #wpforms-56 {
       background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(./images/Trung-Ta-form-desktop.jpg); } }
-  .varaus__form {
-    width: 50%;
-    padding: 6rem; }
-    @media only screen and (max-width: 75em) {
-      .varaus__form {
-        width: 65%; } }
-    @media only screen and (max-width: 56.25em) {
-      .varaus__form {
-        width: 100%; } }
+
+#wpforms-form-56 {
+  width: 50%;
+  padding: 6rem; }
+  @media only screen and (max-width: 75em) {
+    #wpforms-form-56 {
+      width: 65%; } }
+  @media only screen and (max-width: 56.25em) {
+    #wpforms-form-56 {
+      width: 100%; } }

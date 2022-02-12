@@ -36,11 +36,11 @@ pageBanner(array(
                         while(have_posts()) {
                             the_post(); ?>
                     <div class="section-blog__card triple">
-                        <img src="https://source.unsplash.com/random/300x200" alt="Image One" class="section-blog__blog-img">
+                        <?php the_post_thumbnail('small-single-post-thumbnail') ?>
                         <div class="section-blog__card-body">
                             <h4 class="heading-tertiary"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                             </h4>
-                            <small class="text-muted"><?php the_author_posts_link(); ?> kirjoitti <?php the_time('n.j.y') ?> ja postattu tähän kategoriin nimellä <?php echo get_the_category_list(', '); ?></small>
+                            <small class="text-muted"><?php the_author_posts_link(); ?> kirjoitti <?php the_time('j.n.y') ?> ja postattu tähän kategoriin nimellä <?php echo get_the_category_list(', '); ?></small>
                             <hr>
                             <?php the_excerpt(); ?>
                             <p><a class= "btnblog btnblog--primary" href="<?php the_permalink(); ?>">Lue kirjoittamani tarina &raquo;</a></p>

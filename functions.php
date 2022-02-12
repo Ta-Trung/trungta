@@ -71,6 +71,8 @@ function trungta_setup() {
 		* @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		*/
 	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'single-post-thumbnail',800,400);
+	add_image_size( 'small-single-post-thumbnail',408,272);
 
 	/*
 	* Adjust banner's different sizes

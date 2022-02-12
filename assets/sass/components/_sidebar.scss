@@ -1,33 +1,50 @@
-.wp-block-latest-posts__list{
-    background-color: $color-black;
-    padding: 0 0;
-    font-size: 1.4rem;
-    color: $color-grey-light-1;
+.wp-block-latest-posts__list {
+  padding: 0 0;
+  font-size: 1.4rem;
+  color: $color-grey-light-1;
 
-    @include respond(tab-port) {
-        margin-top: .5rem;
-    }
+  @include respond(tab-port) {
+    margin-top: 0.5rem;
+  }
 
-    @include respond(phone){
-        margin-top: .5rem;
-    }
-
+  @include respond(phone) {
+    margin-top: 0.5rem;
+  }
 }
 
-.wp-block-latest-posts__list{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1.4rem;
+.wp-block-latest-posts__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
 }
 
-.wp-block-latest-posts__list li>a:link, a:visited{
-    text-decoration: none;
-    font-size: 1.6rem;
-    color: $color-white;
-    transition: all 0.3s;
+.wp-block-latest-posts__list li > a:link,
+.wp-block-latest-posts__list li > a:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: $color-grey !important;
+  transition: all 0.3s;
 }
 
-.wp-block-latest-posts__list li>a:hover, a:active{
-    color: $color-primary;
+.wp-block-latest-posts__list li > a:hover,
+.wp-block-latest-posts__list li > a:active {
+  color: $color-primary !important;
+}
+
+.wp-block-group {
+  margin: -25rem 0 35rem 0;
+  text-align: center;
+
+  @include respond(phone) {
+    margin: -2rem 0 13rem 0;
+  }
+
+  @include respond(tab-port) {
+    margin: -2rem 0 35rem 0;
+  }
+  &__inner-container p {
+    font-size: $default-font-size;
+    margin-bottom: 1.5rem;
+  }
 }

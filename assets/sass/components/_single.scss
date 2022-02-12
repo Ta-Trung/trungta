@@ -1,0 +1,8 @@
+.section-single {
+  &__content {
+    margin-top: -17.5rem !important;
+  }
+  &__content p:not(:last-child) {
+    margin-bottom: 1.5rem !important;
+  }
+}

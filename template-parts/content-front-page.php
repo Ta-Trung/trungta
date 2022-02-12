@@ -289,20 +289,33 @@
     
 
     <!--Varaus-->
-    <section class="section-varaus" id="section-varaus">
+    <!--<section class="section-varaus" id="section-varaus">
         <div class="row">
             <div class="varaus">
-                <div class="varaus__form">
-                    <form action="#" class="form">
-                        <div class="u-margin-bottom-medium">
+                <div class="varaus__form wpforms-container wpforms-container-full form-subpage" id="wpforms-56">
+                    <form id="wpforms-56" class="form wpforms-validate wpforms-form wpforms-ajax-form" data-formid="56" method="post" enctype="multipart/form-data" action="/trungta" novalidate="novalidate">
+                    <noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript>    
+                    <div class="u-margin-bottom-medium">
                             <h2 class="heading-secondary">
                                 Ota <span style="color:#00A6DA">minuun</span> yhteyttä
                             </h2>
                         </div>
-
-                        <div><?php echo do_shortcode('[wpforms id="56"]'); ?></div>
+                        
                     </form>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <div><?php echo do_shortcode('[wpforms id="56" title="false"]'); ?></div>-->
+
+    <section class="section-varaus" id="section-varaus">
+        <div class="row">
+            <div class="u-margin-bottom-medium">
+                <h2 class="form-56-header heading-secondary">
+                    Ota minuun yhteyttä
+                </h2>
+                <?php echo do_shortcode('[wpforms id="56"]'); ?>
             </div>
         </div>
     </section>
