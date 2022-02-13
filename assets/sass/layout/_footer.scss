@@ -72,21 +72,15 @@
   }
 }
 
-.footer-one li > a:link {
-  text-decoration: none;
-  font-size: 1.6rem;
+.footer-one li > a:link,
+.footer-one li > a:visited {
+  text-decoration: none !important;
+  font-size: 1.6rem !important;
   color: $color-white !important;
-  transition: all 0.3s;
-}
-
-.footer-one li > a:link {
-  text-decoration: none;
-  font-size: 1.6rem;
-  color: $color-grey;
-  transition: all 0.3s;
+  transition: all 0.3s !important;
 }
 
 .footer-one li > a:hover,
 .footer-one li > a:active {
-  color: $color-primary;
+  color: $color-primary !important;
 }

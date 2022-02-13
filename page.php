@@ -85,42 +85,6 @@ if(is_page()) {
             -->
             </div>
         </section>
-
-        <!--ICON BOX-->
-        <section class="section-iconbox">
-            <div class="row">
-                <div class="col-1-of-3 section-iconbox__bg-dark">
-                    <div class="section-iconbox__card-body">
-                        <i class="section-iconbox__icon fas fa-bullhorn"></i>
-                        <h3 class="heading-tertiary">
-                            Sample Heading
-                        </h3>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, expedita.
-                    </div>
-                </div>
-
-                <div class="col-1-of-3 section-iconbox__bg-primary">
-                    <div class="section-iconbox__card-body-primary">
-                        <i class="section-iconbox__icon-primary fas fa-bullhorn"></i>
-                        <h3 class="heading-tertiary">
-                            Sample Heading
-                        </h3>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, expedita.
-                    </div>
-                </div>
-
-                <div class="col-1-of-3 section-iconbox__bg-dark">
-                    <div class="section-iconbox__card-body">
-                        <i class="section-iconbox__icon fas fa-bullhorn"></i>
-                        <h3 class="heading-tertiary">
-                            Sample Heading
-                        </h3>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, expedita.
-                    </div>
-                </div>
-            </div>
-        </section>
-
 	</main><!-- #main -->
 
 <?php }

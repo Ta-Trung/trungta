@@ -1042,8 +1042,16 @@ div.wpforms-container-full .wpforms-form .wpforms-field-label {
 .section-single__content p:not(:last-child) {
   margin-bottom: 1.5rem !important; }
 
+.attachment-single-post-thumbnail,
+.attachment-small-single-post-thumbnail {
+  max-width: 100%;
+  height: auto; }
+
 .pyyda-rohkeasti-tarjoukset {
   font-size: 2rem; }
+
+.wp-block-image figcaption {
+  margin-left: 3.3rem; }
 
 #fbuilder .ui-datepicker-inline {
   max-width: none !important; }
@@ -1464,21 +1472,16 @@ input[type="text"], input[type="search"] {
   .footer__link:hover, .footer__link:active {
     color: #00A6DA; }
 
-.footer-one li > a:link {
-  text-decoration: none;
-  font-size: 1.6rem;
+.footer-one li > a:link,
+.footer-one li > a:visited {
+  text-decoration: none !important;
+  font-size: 1.6rem !important;
   color: #fff !important;
-  transition: all 0.3s; }
-
-.footer-one li > a:link {
-  text-decoration: none;
-  font-size: 1.6rem;
-  color: #777;
-  transition: all 0.3s; }
+  transition: all 0.3s !important; }
 
 .footer-one li > a:hover,
 .footer-one li > a:active {
-  color: #00A6DA; }
+  color: #00A6DA !important; }
 
 .row {
   max-width: 114rem;
@@ -1727,7 +1730,7 @@ input[type="text"], input[type="search"] {
     margin: -20rem 0 25rem 0; }
 
 .section-about {
-  margin-top: -5rem; }
+  margin: -5rem 0 5rem 0; }
   .section-about__nav {
     font-size: 1.2rem;
     text-transform: uppercase; }
@@ -1848,6 +1851,9 @@ input[type="text"], input[type="search"] {
   @media only screen and (max-width: 37.5em) {
     .triple {
       width: 100%; } }
+  @media only screen and (max-width: 56.25em) {
+    .triple {
+      width: 75%; } }
 
 .section-single__content {
   margin: -15rem 0 10rem;
