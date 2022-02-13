@@ -75,6 +75,10 @@
   @include respond(phone) {
     width: 100%;
   }
+
+  @include respond(tab-port) {
+    width: 75%;
+  }
 }
 
 .section-single {

@@ -6,3 +6,9 @@
     margin-bottom: 1.5rem !important;
   }
 }
+
+.attachment-single-post-thumbnail,
+.attachment-small-single-post-thumbnail {
+  max-width: 100%;
+  height: auto;
+}
