@@ -9,3 +9,15 @@
 .wp-block-column .referenssit-case-1-p {
   margin-top: 4rem;
 }
+
+.referenssit-case-1-p a:link,
+.referenssit-case-1-p a:visited {
+  font-size: 1.6rem;
+  color: $color-black !important;
+  transition: all 0.3s;
+}
+
+.referenssit-case-1-p a:hover,
+.referenssit-case-1-p a:active {
+  color: $color-primary !important;
+}
