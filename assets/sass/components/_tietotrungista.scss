@@ -2,6 +2,22 @@
   font-size: 2rem;
 }
 
+.opiskele-web-kehittajaksi {
+  font-size: 2rem;
+}
+
 .wp-block-image figcaption {
   margin-left: 3.3rem;
+}
+
+.tieto-trung-ta a:link,
+.tieto-trung-ta a:visited {
+  font-size: 1.6rem;
+  color: $color-black !important;
+  transition: all 0.3s;
+}
+
+.tieto-trung-ta a:hover,
+.tieto-trung-ta a:active {
+  color: $color-primary !important;
 }

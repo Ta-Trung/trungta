@@ -265,6 +265,24 @@ body {
     width: 100%;
     object-fit: cover; }
 
+.wp-block-quote {
+  background: #f7f7f7;
+  border-left: 1rem solid #999;
+  margin: 1.5em 1rem;
+  padding: 0.5em 1rem;
+  quotes: "“" "”" "‘" "’"; }
+
+.wp-block-quote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em; }
+
+.wp-block-quote p {
+  display: inline; }
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -1050,8 +1068,21 @@ div.wpforms-container-full .wpforms-form .wpforms-field-label {
 .pyyda-rohkeasti-tarjoukset {
   font-size: 2rem; }
 
+.opiskele-web-kehittajaksi {
+  font-size: 2rem; }
+
 .wp-block-image figcaption {
   margin-left: 3.3rem; }
+
+.tieto-trung-ta a:link,
+.tieto-trung-ta a:visited {
+  font-size: 1.6rem;
+  color: #181818 !important;
+  transition: all 0.3s; }
+
+.tieto-trung-ta a:hover,
+.tieto-trung-ta a:active {
+  color: #00A6DA !important; }
 
 #fbuilder .ui-datepicker-inline {
   max-width: none !important; }
@@ -1867,7 +1898,7 @@ input[type="text"], input[type="search"] {
   color: #181818;
   margin-top: 1.5rem; }
   .content p:not(:last-child) {
-    margin-bottom: 3rem; }
+    margin-bottom: 1rem; }
 
 .navigation__nav {
   height: 100vh;
@@ -1909,7 +1940,8 @@ input[type="text"], input[type="search"] {
 .navigation__nav li {
   margin: 1rem; }
 
-.navigation__nav li > a:link, a:visited {
+.navigation__nav li > a:link,
+a:visited {
   display: inline-block;
   font-size: 3rem;
   font-weight: 300;
@@ -1919,9 +1951,10 @@ input[type="text"], input[type="search"] {
   text-transform: uppercase;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
   background-size: 220%;
-  transition: all .4s; }
+  transition: all 0.4s; }
 
-.navigation__nav li > a:hover, a:active {
+.navigation__nav li > a:hover,
+a:active {
   background-position: 100%;
   color: #00A6DA;
   transform: translateX(1rem); }
@@ -1944,18 +1977,20 @@ input[type="text"], input[type="search"] {
   flex-direction: column;
   gap: 1.4rem; }
 
-.menu-footer-two-container li > a:link, a:visited {
+.menu-footer-two-container li > a:link,
+a:visited {
   text-decoration: none;
   font-size: 1.6rem;
   color: #fff;
   transition: all 0.3s; }
 
-.menu-footer-two-container li > a:hover, a:active {
+.menu-footer-two-container li > a:hover,
+a:active {
   color: #00A6DA; }
 
 @media only screen and (max-width: 37.5em) {
   .footer-2 {
-    margin-top: .5rem; } }
+    margin-top: 0.5rem; } }
 
 .post-item {
   background-color: #181818; }

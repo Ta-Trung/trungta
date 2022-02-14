@@ -1,122 +1,130 @@
 //CONTENTS PARAGRAPH THAT COMPATIBLE WITH WORDPRESS
-.content p{
-    font-size: $default-font-size;
-    color:$color-black;
-    margin-top: 1.5rem;
+.content p {
+  font-size: $default-font-size;
+  color: $color-black;
+  margin-top: 1.5rem;
 
-    &:not(:last-child) {
-        margin-bottom: 3rem;
-    }
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
 }
 
 //NAVIGATION THAT COMPATIBLE WITH WORDPRESS
-.navigation__nav{
-    height: 100vh;
-        position: fixed;
-        top: 0;
-        left: -25%;
-        z-index: 1500;
+.navigation__nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -25%;
+  z-index: 1500;
 
-        opacity: 0;
-        width: 0;
-        transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  opacity: 0;
+  width: 0;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-        @include respond(phone){
-            position: fixed;
-            top: 0;
-            left: -80%;
-            z-index: 1500;
+  @include respond(phone) {
+    position: fixed;
+    top: 0;
+    left: -80%;
+    z-index: 1500;
 
-            opacity: 0;
-            width: 0;
-            transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        }
+    opacity: 0;
+    width: 0;
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
 }
-.navigation__nav ul{
+.navigation__nav ul {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%;
+
+  @include respond(phone) {
     position: absolute;
     top: 50%;
-    left: 75%;
-    transform: translate(-50%,-50%);
+    left: 130%;
+    transform: translate(-50%, -50%);
     list-style: none;
     text-align: center;
     width: 100%;
-
-    @include respond(phone){
-        position: absolute;
-        top: 50%;
-        left: 130%;
-        transform: translate(-50%,-50%);
-        list-style: none;
-        text-align: center;
-        width: 100%;
-    }
-
+  }
 }
 
-.navigation__nav li{
-    margin: 1rem;
+.navigation__nav li {
+  margin: 1rem;
 }
 
-.navigation__nav li>a:link,a:visited{
-    display: inline-block;
-    font-size: 3rem;
-    font-weight: 300;
-    padding: 1rem 2rem;
-    color: $color-white;
-    text-decoration: none;
-    text-transform: uppercase;
-    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
-    background-size: 220%;
-    transition: all .4s;
+.navigation__nav li > a:link,
+a:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  color: $color-white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 50%,
+    $color-white 50%
+  );
+  background-size: 220%;
+  transition: all 0.4s;
 }
 
-.navigation__nav li>a:hover,a:active{
-    background-position: 100%;
-    color: $color-primary;
-    transform: translateX(1rem);
+.navigation__nav li > a:hover,
+a:active {
+  background-position: 100%;
+  color: $color-primary;
+  transform: translateX(1rem);
 }
 
 //FOOTER THAT COMPATIBLE WITH WORDPRESS
-.menu-footer-two-container{
-    background-color: $color-black;
-    padding: 0 0;
-    font-size: 1.4rem;
-    color: $color-grey-light-1;
+.menu-footer-two-container {
+  background-color: $color-black;
+  padding: 0 0;
+  font-size: 1.4rem;
+  color: $color-grey-light-1;
 
-    @include respond(tab-port) {
-        padding: 8rem 0;
-    }
+  @include respond(tab-port) {
+    padding: 8rem 0;
+  }
 
-    @include respond(tab-port) {
-        padding: 1rem 0;
-    }
+  @include respond(tab-port) {
+    padding: 1rem 0;
+  }
 }
 
-.menu-footer-two-container ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1.4rem;
+.menu-footer-two-container ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
 }
 
-.menu-footer-two-container li>a:link, a:visited{
-    text-decoration: none;
-    font-size: 1.6rem;
-    color: $color-white;
-    transition: all 0.3s;
+.menu-footer-two-container li > a:link,
+a:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: $color-white;
+  transition: all 0.3s;
 }
 
-.menu-footer-two-container li>a:hover, a:active{
-    color: $color-primary;
+.menu-footer-two-container li > a:hover,
+a:active {
+  color: $color-primary;
 }
 
-.footer-2{
-    @include respond(phone){
-        margin-top: .5rem;
-    }
+.footer-2 {
+  @include respond(phone) {
+    margin-top: 0.5rem;
+  }
 }
 
 //BLOG THAT COMPATIBLE WITH WORDPRESS
-.post-item{
-    background-color:$color-black;
+.post-item {
+  background-color: $color-black;
 }
