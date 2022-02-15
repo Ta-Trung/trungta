@@ -43,10 +43,42 @@ body {
 h2 {
   font-size: 2rem;
   margin-top: 1rem;
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+
+  @include respond(tab-port) {
+    font-size: 2.5rem;
+  }
 }
 
 li {
   font-size: 1.6rem;
   color: $color-black;
   margin: 0 0 0.5rem 2.5rem;
+
+  @include respond(phone) {
+    font-size: 2rem;
+  }
+
+  @include respond(tab-port) {
+    font-size: 2rem;
+  }
+}
+
+p {
+  font-size: $default-font-size;
+
+  @include respond(phone) {
+    font-size: 2rem;
+  }
+
+  @include respond(tab-port) {
+    font-size: 2rem;
+  }
+
+  &:not(:last-child) {
+    margin: 1rem 0 3rem;
+  }
 }

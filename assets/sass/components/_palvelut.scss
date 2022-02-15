@@ -1,72 +1,92 @@
+.sisallysluettelo-heading,
+.paketti-1,
+.paketti-2,
+.paketti-3,
+.paketti-4,
+.paketti-5,
+.paketti-6 {
+  font-size: 2rem;
 
-.sisallysluettelo-heading, .paketti-1, .paketti-2, .paketti-3, .paketti-4, .paketti-5, .paketti-6 {
-    font-size: 2rem;
+  @include respond(phone) {
+    font-size: 3rem;
+  }
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
 }
 
-.sisallysluettelo-palvelut{
-    background-color: $color-grey-light-1;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin-top: 2em;
-    margin-bottom: 2em;
+.sisallysluettelo-palvelut {
+  background-color: $color-grey-light-1;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
-.sisallysluettelo-palvelut>ol{
-    margin-left: 1.5em !important;
+.sisallysluettelo-palvelut > ol {
+  margin-left: 1.5em !important;
 }
 
-.sisallysluettelo-palvelut ol{
-    margin-top: 0;
-    margin-bottom: 0;
+.sisallysluettelo-palvelut ol {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.sisallysluettelo-palvelut ol{
-    color: $color-primary-dark;
-    line-height: 1.9em;
+.sisallysluettelo-palvelut ol {
+  color: $color-primary-dark;
+  line-height: 1.9em;
 }
 
-.sisallysluettelo-palvelut ol{
-    font-size: 1.5rem;
+.sisallysluettelo-palvelut ol {
+  font-size: 1.5rem;
 }
 
-
-.sisallysluettelo-palvelut li{
-    margin-top: 0;
-    margin-bottom: 0;
+.sisallysluettelo-palvelut li {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.sisallysluettelo-palvelut li>a:hover{
-    color: $color-primary-dark;
+.sisallysluettelo-palvelut li > a:hover {
+  color: $color-primary-dark;
 }
 
-.sisallysluettelo-palvelut li>a{
-    color:$color-grey;
-    text-decoration: none;
-    cursor: pointer;
+.sisallysluettelo-palvelut li > a {
+  color: $color-grey;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.sisallysluettelo-palvelut li>a{
-    font-weight: normal;
+.sisallysluettelo-palvelut li > a {
+  font-weight: normal;
 }
 
-.paketti-1-ul, .paketti-2-ul, .paketti-3-ul{
-    list-style-type: disc;
-    margin-top: 0;
+.paketti-1-ul,
+.paketti-2-ul,
+.paketti-3-ul {
+  list-style-type: disc;
+  margin-top: 0;
 }
 
-.paketti-1-ul, .paketti-2-ul, .paketti-3-ul{
-    color: $color-dark-grey;
-    line-height: 1.7em;
+.paketti-1-ul,
+.paketti-2-ul,
+.paketti-3-ul {
+  color: $color-dark-grey;
+  line-height: 1.7em;
 }
 
-.paketti-1-ul, .paketti-2-ul, .paketti-3-ul{
-    font-size: 1.5rem;
+.paketti-1-ul,
+.paketti-2-ul,
+.paketti-3-ul {
+  font-size: 1.5rem;
 }
 
-.paketti-1-ul, .paketti-2-ul, .paketti-3-ul{
-    margin-left: 1.5em !important;
+.paketti-1-ul,
+.paketti-2-ul,
+.paketti-3-ul {
+  margin-left: 1.5em !important;
 }
 
-.paketti-5-paragraph{
-    margin-bottom: 1.5rem;
+.paketti-5-paragraph {
+  margin-bottom: 1.5rem;
 }

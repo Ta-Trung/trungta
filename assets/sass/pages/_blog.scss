@@ -43,6 +43,14 @@
   &__card-body p {
     font-size: 1rem;
     margin-top: 1.5rem;
+
+    @include respond(phone) {
+      font-size: 1.2rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 1.2rem;
+    }
   }
 
   &__card-body h4 > a {

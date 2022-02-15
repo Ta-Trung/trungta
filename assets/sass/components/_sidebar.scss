@@ -25,6 +25,14 @@
   font-size: 1.6rem;
   color: $color-grey !important;
   transition: all 0.3s;
+
+  @include respond(phone) {
+    font-size: 2rem;
+  }
+
+  @include respond(tab-port) {
+    font-size: 2rem;
+  }
 }
 
 .wp-block-latest-posts__list li > a:hover,
@@ -46,5 +54,13 @@
   &__inner-container p {
     font-size: $default-font-size;
     margin-bottom: 1.5rem;
+
+    @include respond(phone) {
+      font-size: 2rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 2rem;
+    }
   }
 }
