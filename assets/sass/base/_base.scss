@@ -39,3 +39,14 @@ body {
   background-color: $color-primary;
   color: $color-white;
 }
+
+h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+li {
+  font-size: 1.6rem;
+  color: $color-black;
+  margin: 0 0 0.5rem 2.5rem;
+}
