@@ -67,6 +67,15 @@ body {
   background-color: #00A6DA;
   color: #fff; }
 
+h2 {
+  font-size: 2rem;
+  margin-top: 1rem; }
+
+li {
+  font-size: 1.6rem;
+  color: #181818;
+  margin: 0 0 0.5rem 2.5rem; }
+
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -961,6 +970,16 @@ div.wpforms-container-full .wpforms-form .wpforms-field-label {
 
 .wp-block-column .referenssit-case-1-p {
   margin-top: 4rem; }
+
+.referenssit-case-1-p a:link,
+.referenssit-case-1-p a:visited {
+  font-size: 1.6rem;
+  color: #181818 !important;
+  transition: all 0.3s; }
+
+.referenssit-case-1-p a:hover,
+.referenssit-case-1-p a:active {
+  color: #00A6DA !important; }
 
 .search-result {
   margin-top: -6rem !important;
