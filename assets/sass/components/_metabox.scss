@@ -8,14 +8,14 @@
 
   &--position-up {
     top: 0;
-    transform: translateY(-360%);
+    transform: translateY(-463%);
 
     @include respond(phone) {
-      transform: translateY(-234%) !important;
+      transform: translateY(-530%) !important;
     }
 
     @include respond(tab-port) {
-      transform: translateY(-255%);
+      transform: translateY(-433%);
     }
   }
 

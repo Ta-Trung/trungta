@@ -781,13 +781,13 @@ div.wpforms-container-full .wpforms-form .wpforms-field-label {
   box-shadow: 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.07); }
   .metabox--position-up {
     top: 0;
-    transform: translateY(-360%); }
+    transform: translateY(-463%); }
     @media only screen and (max-width: 37.5em) {
       .metabox--position-up {
-        transform: translateY(-234%) !important; } }
+        transform: translateY(-530%) !important; } }
     @media only screen and (max-width: 56.25em) {
       .metabox--position-up {
-        transform: translateY(-255%); } }
+        transform: translateY(-433%); } }
   .metabox--with-home-link {
     padding: 0; }
   .metabox__main {
@@ -1024,7 +1024,7 @@ div.wpforms-container-full .wpforms-form .wpforms-field-label {
   margin-top: 12rem; }
   @media only screen and (max-width: 37.5em) {
     .wp-block-column .referenssit-logo-p {
-      margin-top: 5rem; } }
+      margin-top: 3rem; } }
   @media only screen and (max-width: 56.25em) {
     .wp-block-column .referenssit-logo-p {
       margin-top: 5rem; } }
@@ -1041,6 +1041,9 @@ div.wpforms-container-full .wpforms-form .wpforms-field-label {
 .referenssit-case-1-p a:hover,
 .referenssit-case-1-p a:active {
   color: #00A6DA !important; }
+
+.referenssit-heading {
+  margin-top: -22.5rem; }
 
 .search-result {
   margin-top: -6rem !important;

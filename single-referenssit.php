@@ -7,7 +7,13 @@
  * @package trungta
  */
 
-get_header();
+if(is_single()) {
+    get_header('page');
+   }
+   else {
+    get_header();
+   }
+    wp_head();
 ?>
 
 	<main id="primary" class="site-main">

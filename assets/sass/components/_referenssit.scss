@@ -6,7 +6,7 @@
   margin-top: 12rem;
 
   @include respond(phone) {
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
 
   @include respond(tab-port) {
@@ -28,4 +28,8 @@
 .referenssit-case-1-p a:hover,
 .referenssit-case-1-p a:active {
   color: $color-primary !important;
+}
+
+.referenssit-heading {
+  margin-top: -22.5rem;
 }
